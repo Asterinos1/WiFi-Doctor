@@ -1,4 +1,5 @@
 import pyshark
+from tqdm import tqdm  # 'pip install tqdm' -> shows progress of packet analysis.
 
 def extract_all_data(pcap_file: str) -> list:
     """
@@ -28,10 +29,11 @@ def extract_all_data(pcap_file: str) -> list:
        List: Contains a dictionary for each packet in the pcap_file
     """
 
-    capture = pyshark.FileCapture(pcap_file)  #=
+    capture = pyshark.FileCapture(pcap_file)
     extracted_data_all = []
+    total_packets = len(capture)
 
-    for packet in capture:
+    for packet in tqdm(capture, total=total_packets, desc="Analyzing Packets"):
         packet_data_all = {
             'bssid': None,
             'transmitter_mac': None,
@@ -75,13 +77,14 @@ def extract_all_data(pcap_file: str) -> list:
         if hasattr(packet, 'radiotap'):
             packet_data_all['frequency'] = getattr(packet.radiotap, 'channel_freq', None)
 
-        #this is for ssid eg TUC   
+        # this is for ssid eg TUC   
         if 'wlan.mgt' in packet:
             ssid_tag = packet['wlan.mgt'].get('wlan.tag', None)
             if ssid_tag and 'SSID parameter set:' in ssid_tag:
                 packet_data_all['ssid'] = ssid_tag.split('SSID parameter set: ')[-1].strip('"')
             else:
                 packet_data_all['ssid'] = None  
+
         extracted_data_all.append(packet_data_all)
 
     capture.close()
@@ -154,18 +157,31 @@ def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> li
 
 
 if __name__ == "__main__":
-    pcap_file = 'pcap_files/HowIWiFi_PCAP.pcap'  
+    pcap_file = 'analyzer/pcap_files/HowIWiFi_PCAP.pcap'  
+    #pcap_file = 'analyzer\\pcap_files\\HowIWiFi_PCAP.pcap'
+
+    #Debugging stuff
+    print("Starting...")
     data = extract_all_data(pcap_file)
 
-    
+    #Debugging 
+    print("Data succesfully extracted.")
+
     data = find_spatial_streams(data)
+
+    print("Extracted spatial streams.")
 
     #filter beacon frames
     beacon_frame_data = filter_beacon_frames(data)
 
-    #communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
+    print("Beacon frames filtered.")
+
+    print("Proceeding to get the info for analyzer part:")
+    communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
+    print("Done.")
 
     print("\nBeacon Frames:")
-    for i, packet_info in enumerate(beacon_frame_data):
-        print(f"Packet #{i+1}: {packet_info}")
+    print("** 5 billion frames spam here **")
+    # for i, packet_info in enumerate(beacon_frame_data):
+    #     print(f"Packet #{i+1}: {packet_info}")
 
