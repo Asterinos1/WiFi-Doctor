@@ -285,3 +285,32 @@ def get_rssi_ht_mcs(ht_mcs_value, mhz, data):
             return row[rssi_column]
     
     return None
+
+def get_expected_mcs_index(data_rate, data_rate_type, mhz, spatial_group, data):
+    """
+    Returns the MCS index for a given data rate, MHz, data rate type, and spatial group.
+
+    Parameters:
+        data_rate (float): The target data rate to match.
+        data_rate_type (int): The data rate type, either 800 ns or 400 ns.
+        mhz (int): The channel bandwidth in MHz (e.g., 20, 40, 80, 160).
+        spatial_group (int): The spatial group index (1, 2, or 3).
+        data (list): The dataset containing the HT MCS values and their corresponding data rates.
+
+    Returns:
+        int: The MCS index corresponding to the given data rate, or None if not found.
+    """
+    # Construct the column name based on mhz and data_rate_type
+    rate_column = f"{mhz} MHz {data_rate_type}ns"
+
+    # Iterate through the data to find the matching data rate for the given spatial group
+    for idx, row in enumerate(data):
+        # Check if the spatial group matches
+        group = idx // 10 + 1  # Spatial group is determined by index (1st 10 rows -> group 1, etc.)
+        if group == spatial_group:
+            # Compare the data rate
+            if row[rate_column] == data_rate:
+                return row["HT MCS"]  # Return the HT MCS (index)
+
+    return None  # Return None if no match is found
+
