@@ -27,7 +27,7 @@ def print_matrix(data):
     spatial_groups = [1, 2, 3]  # The labels for the spatial groups
     
     for group in spatial_groups:
-        print(f"---- {group} spatial group ----")  # Print the spatial group label
+        print(f"------------------------------------------------------------------------------------------------------------------------------------------------ {group} spatial group ------------------------------------------------------------------------------------------------------------------------------------------------")  # Print the spatial group label
         
         for i in range(10):  # Each group has 10 rows
             index = (group - 1) * 10 + i  # Calculate the row index for the current group
@@ -81,7 +81,7 @@ vht_mcs = [x % 10 for x in range(30)]  # VHT MCS goes from 0 to 9 and repeats ev
 # Now, create lists for the new columns
 data_rate_800ns = [
     # 1st spatial group
-    [6.5, 12, 19.5, 26, 39, 52, 58.5, 65, 78, None],
+    [6.5, 13, 19.5, 26, 39, 52, 58.5, 65, 78, None],
     # 2nd spatial group
     [13, 26, 39, 52, 78, 104, 117, 130, 156, None],
     # 3rd spatial group
@@ -96,6 +96,10 @@ data_rate_400ns = [
     # 3rd spatial group
     [21.7, 43.3, 65, 86.7, 130, 173.3, 195, 216.7, 260, 288.9]
 ]
+
+rssi_min_snr_mhz = [2, 5, 9, 11, 15, 18, 20, 25, 29, 31]
+
+rssi_values_mhz = [-82, -79, -77, -74, -70, -66, -65, -64, -59, -57]
 
 # Additional data for the new columns
 # 40 MHz 800ns Data Rate
@@ -124,7 +128,6 @@ rssi_min_snr_40mhz = [5, 8, 12, 14, 18, 21, 23, 28, 32, 34]
 # 40 MHz RSSI (same for all groups)
 rssi_values_40mhz = [-79, -76, -74, -71, -67, -63, -62, -61, -56, -54]
 
-# New values for 80 MHz columns
 
 # 80 MHz 800ns Data Rate
 data_rate_80mhz_800ns = [
@@ -146,42 +149,74 @@ data_rate_80mhz_400ns = [
     [97.5, 195, 292.5, 390, 585, 780, None, 975, 1170, 1300]
 ]
 
+
 # 80 MHz Min. SNR (same for all groups)
 rssi_min_snr_80mhz = [8, 11, 15, 17, 21, 24, 26, 31, 35, 37]
 
 # 80 MHz RSSI (same for all groups)
 rssi_values_80mhz = [-76, -73, -71, -68, -64, -60, -59, -58, -53, -51]
 
+# Adding the new columns for 160 MHz Data Rate and other properties
+
+# 160 MHz 800ns Data Rate
+data_rate_160mhz_800ns = [
+    # 1st spatial group
+    [58.5, 117, 175.5, 234, 351, 468, 526.5, 585, 702, 780],
+    # 2nd spatial group
+    [117, 234, 351, 468, 702, 936, 1053, 1170, 1404, 1560],
+    # 3rd spatial group
+    [175.5, 351, 526.5, 702, 1053, 1404, 1580, 1755, 2106, None]
+]
+
+# 160 MHz 400ns Data Rate
+data_rate_160mhz_400ns = [
+    # 1st spatial group
+    [65, 130, 195, 260, 390, 520, 585, 650, 780, 866.7],
+    # 2nd spatial group
+    [130, 260, 390, 520, 780, 1040, 1170, 1300, 1560, 1733],
+    # 3rd spatial group
+    [195, 390, 585, 780, 1170, 1560, 1755, 1950, 2340, None]
+]
+
+# 160 MHz Min. SNR (same for all groups)
+rssi_min_snr_160mhz = [11, 14, 18, 20, 24, 27, 29, 34, 38, 40]
+
+# 160 MHz RSSI (same for all groups)
+rssi_values_160mhz = [-73, -70, -68, -65, -61, -57, -56, -55, -50, -48]
+
+# Now, integrate the new 160 MHz data into the row generation logic
 # Initialize an empty list to store the data for each row
 data = []
 
-# Populate the matrix data
-for i in range(30):  # 30 rows in total (10 for each spatial group)
-    group = i // 10  # Determine which spatial group we're in (0 = 1st group, 1 = 2nd group, 2 = 3rd group)
+# Now, generate the full data structure and populate the values
+for i in range(30):  # 3 spatial streams, each with 10 rows (30 rows total)
+    group = i // 10  # Determine the spatial group (0 = 1st group, 1 = 2nd group, 2 = 3rd group)
     
     row = {
         "HT MCS": ht_mcs[i],
         "VHT MCS": vht_mcs[i],
         "Modulation": modulation[i % 10],  # Modulation repeats every 10 rows
         "Coding": coding[i % 10],  # Coding repeats every 10 rows
+        # "20 MHz" section
         "20 MHz 800ns": data_rate_800ns[group][i % 10],  # 20 MHz 800ns data rate
         "20 MHz 400ns": data_rate_400ns[group][i % 10],  # 20 MHz 400ns data rate
-        "20 MHz Min. SNR": rssi_min_snr_40mhz[i % 10],  # SNR is the same for all groups
-        "20 MHz RSSI": rssi_values_40mhz[i % 10],  # RSSI is the same for all groups
+        "20 MHz Min. SNR": rssi_min_snr_mhz[i % 10],  # SNR is the same for all groups
+        "20 MHz RSSI": rssi_values_mhz[i % 10],  # RSSI is the same for all groups
+        # "40 MHz" section
         "40 MHz 800ns": data_rate_40mhz_800ns[group][i % 10],  # 40 MHz 800ns data rate
         "40 MHz 400ns": data_rate_40mhz_400ns[group][i % 10],  # 40 MHz 400ns data rate
         "40 MHz Min. SNR": rssi_min_snr_40mhz[i % 10],  # 40 MHz SNR (same across groups)
         "40 MHz RSSI": rssi_values_40mhz[i % 10],  # 40 MHz RSSI (same across groups)
         # "80 MHz" section
-        "80 MHz 800ns": data_rate_80mhz_800ns[group][i % 10],  # 80 MHz 800ns data rate
-        "80 MHz 400ns": data_rate_80mhz_400ns[group][i % 10],  # 80 MHz 400ns data rate
-        "80 MHz Min. SNR": rssi_min_snr_80mhz[i % 10],  # 80 MHz Min. SNR (same across groups)
-        "80 MHz RSSI": rssi_values_80mhz[i % 10],  # 80 MHz RSSI (same across groups)
+        "80 MHz 800ns": data_rate_80mhz_800ns[group][i % 10],  # Placeholder for actual data
+        "80 MHz 400ns": data_rate_80mhz_400ns[group][i % 10],  # Placeholder for actual data
+        "80 MHz Min. SNR": rssi_min_snr_80mhz[i % 10],  # Placeholder for actual data
+        "80 MHz RSSI": rssi_values_80mhz[i % 10],  # Placeholder for actual data
         # "160 MHz" section
-        "160 MHz 800ns": None,  # Placeholder for actual data
-        "160 MHz 400ns": None,  # Placeholder for actual data
-        "160 MHz Min. SNR": None,  # Placeholder for actual data
-        "160 MHz RSSI": None,  # Placeholder for actual data
+        "160 MHz 800ns": data_rate_160mhz_800ns[group][i % 10],  # Placeholder for actual data
+        "160 MHz 400ns": data_rate_160mhz_400ns[group][i % 10],  # Placeholder for actual data
+        "160 MHz Min. SNR": rssi_min_snr_160mhz[i % 10],  # Placeholder for actual data
+        "160 MHz RSSI": rssi_values_160mhz[i % 10],  # Placeholder for actual data
     }
     data.append(row)
 
