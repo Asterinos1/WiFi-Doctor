@@ -147,6 +147,102 @@ def find_spatial_streams(data_all: list) -> list:
 
     return data_all
 
+#briskei to expected mcs index basei to rssi tou pinaka
+def find_expected_mcs_index(signal_strength, spatial_streams):
+
+    if spatial_streams == 1:          
+        if signal_strength >= -64:
+            return 7  
+        elif -65 <= signal_strength < -64:
+            return 6 
+        elif -66 <= signal_strength < -65:
+            return 5
+        elif -70 <= signal_strength < -66:
+            return 4
+        elif -74 <= signal_strength < -70:
+            return 3
+        elif -77 <= signal_strength < -74:
+            return 2
+        elif -79 <= signal_strength < -77:
+            return 1
+        else:
+            return 0
+    if spatial_streams == 2:
+        if signal_strength >= -64:
+            return 15   
+        elif -65 <= signal_strength < -64:
+            return 14 
+        elif -66 <= signal_strength < -65:
+            return 13
+        elif -70 <= signal_strength < -66:
+            return 12
+        elif -74 <= signal_strength < -70:
+            return 11
+        elif -77 <= signal_strength < -74:
+            return 10
+        elif -79 <= signal_strength < -77:
+            return 9
+        else:
+            return 8
+    if spatial_streams == 3:
+        if signal_strength >= -64:
+            return 23  
+        elif -65 <= signal_strength < -64:
+            return 22 
+        elif -66 <= signal_strength < -65:
+            return 21
+        elif -70 <= signal_strength < -66:
+            return 20
+        elif -74 <= signal_strength < -70:
+            return 19
+        elif -77 <= signal_strength < -74:
+            return 18
+        elif -79 <= signal_strength < -77:
+            return 17
+        else:
+            return 16
+
+
+#bazei rate gap sto data[dict]
+def add_rate_gap(data_all: list) -> list:
+
+    for packet in data_all:
+        if packet.get('spatial_streams') is None and packet.get('mcs_index') is not None:
+            try:
+                mcs_index = int(packet['mcs_index'])
+                if 1 <= mcs_index <= 7:
+                    packet['spatial_streams'] = 1
+                elif 8 <= mcs_index <= 15:
+                    packet['spatial_streams'] = 2
+                elif 16 <= mcs_index <= 23:
+                    packet['spatial_streams'] = 3
+                else:
+                    packet['spatial_streams'] = None
+            except ValueError:
+                packet['spatial_streams'] = None
+        
+        if packet.get('signal_strength') is not None and packet.get('spatial_streams') is not None:
+            try:
+                signal_strength = int(packet['signal_strength'])
+                spatial_streams = int(packet['spatial_streams'])
+                expected_mcs_index = find_expected_mcs_index(signal_strength, spatial_streams)
+
+                # Compute the rate gap
+                actual_mcs_index = int(packet['mcs_index']) if packet.get('mcs_index') is not None else 0
+                packet['rate_gap'] = find_rate_gap(expected_mcs_index, actual_mcs_index)
+
+            except (ValueError, TypeError):
+                packet['rate_gap'] = None  
+
+    return data_all
+
+
+## ORIZOUME EMEIS ENA BASELINE -> kinito dipla sto router einai to ideal
+## MCS INDEX
+def find_rate_gap(expected_mcs_index, actual_mcs_index):
+
+    return expected_mcs_index-actual_mcs_index
+
 def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> list:
     """
     filters the packets with the corresponding sa mac and ta mac with a specific filter 
@@ -170,7 +266,7 @@ if __name__ == "__main__":
     print("eimai kainourgio")
     pcap_file = 'pcap_files/HowIWiFi_PCAP.pcap'  
     data = extract_all_data(pcap_file)
-
+    data = add_rate_gap(data)
     
     #data = find_spatial_streams(data)
 
