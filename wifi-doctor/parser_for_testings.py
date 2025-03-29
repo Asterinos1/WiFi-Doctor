@@ -74,6 +74,7 @@ def extract_all_data_testing_pcap(pcap_file: str) -> list:
             packet_data_all['channel'] = getattr(packet.wlan_radio, 'channel', None)
             packet_data_all['signal_strength'] = getattr(packet.wlan_radio, 'signal_dbm', None)
             packet_data_all['snr'] = getattr(packet.wlan_radio, 'snr', None)
+            packet_data_all['timestamp'] = getattr(packet.wlan_radio, 'timestamp', None) 
 
         if hasattr(packet, 'radiotap'):
             packet_data_all['frequency'] = getattr(packet.radiotap, 'channel_freq', None)
@@ -81,9 +82,9 @@ def extract_all_data_testing_pcap(pcap_file: str) -> list:
         #this is for ssid eg TUC   
         if 'wlan.mgt' in packet:
             ssid_tag = packet['wlan.mgt'].get('wlan.tag', None)
-            timestamps =packet['wlan.mgt'].get('wlan_fixed_timestamp', None)
+            #timestamps =packet['wlan.mgt'].get('wlan_fixed_timestamp', None)
             #print(f"this is the {timestamps}\n\n")
-            packet_data_all['timestamp'] = timestamps
+            #packet_data_all['timestamp'] = timestamps
             if ssid_tag and 'SSID parameter set:' in ssid_tag:
                 packet_data_all['ssid'] = ssid_tag.split('SSID parameter set: ')[-1].strip('"')
             else:
