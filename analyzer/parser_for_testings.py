@@ -1,5 +1,5 @@
 import pyshark
-
+from tqdm import tqdm
 
 #not working
 def extract_all_data_testing_pcap(pcap_file: str) -> list:
@@ -33,7 +33,7 @@ def extract_all_data_testing_pcap(pcap_file: str) -> list:
     extracted_data_all = []
 
     i = 0
-    for packet in capture:
+    for packet in tqdm(capture, desc="Extracting Data", unit="packet"):
         packet_data_all = {
             'bssid': None,
             'transmitter_mac': None,
@@ -178,7 +178,7 @@ def find_expected_mcs_index(signal_strength, spatial_streams):
 #bazei rate gap sto data[dict]
 def add_rate_gap(data_all: list) -> list:
 
-    for packet in data_all:
+    for packet in tqdm(data_all, desc="Calculating Rate Gap", unit="packet"):
         if packet.get('spatial_streams') is None and packet.get('mcs_index') is not None:
             try:
                 mcs_index = int(packet['mcs_index'])
@@ -252,10 +252,13 @@ def no_filter_for_1_2(data_all: list, source_mac: str, dest_mac: str) -> list:
     return filtered_packets
 
 if __name__ == "__main__":
-    print("eimai kainourgio")
-    pcap_file = 'pcap_files/1_2_test_pcap1.pcap'  
+    print("Starting parser...")
+    pcap_file = 'analyzer/pcap_files/1_2_testing_pcap_files/1_2_test_pcap1.pcap'  
+    print(f"Moving to extract data from {pcap_file}")
     data = extract_all_data_testing_pcap(pcap_file)
+    print("Calculating rate gap...")
     data = add_rate_gap(data)
+    print("Rate gap calculation complete.\nData is ready for use.")
     
     #data = find_spatial_streams(data)
 
@@ -265,7 +268,7 @@ if __name__ == "__main__":
     communication_packets = no_filter_for_1_2(data, "d0:b6:6f:96:2b:bb", "dc:e9:94:2a:68:31")
     
 
-    print("\nBeacon Frames:")
-    for i, packet_info in enumerate(communication_packets):
-        #if((packet_info['mcs_index'] != '130') and (packet_info['short_gi'] == False)):
-        print(f"Packet #{i+1}: {packet_info}")
+    # print("\nBeacon Frames:")
+    # for i, packet_info in enumerate(communication_packets):
+    #     #if((packet_info['mcs_index'] != '130') and (packet_info['short_gi'] == False)):
+    #     print(f"Packet #{i+1}: {packet_info}")

@@ -1,6 +1,7 @@
 import pyshark
+from tqdm import tqdm
 
-def extract_all_data(pcap_file: str) -> list:
+def extract_all_data(pcap_file: str, packet_limit: int = 0) -> list:
     """
     Using pyshark this method applies no filter into the pcap file
     and tries to extract various information from those packets such as:
@@ -22,21 +23,20 @@ def extract_all_data(pcap_file: str) -> list:
 
     Args:
         pcap_file (str): path to the pcap file
+        packet_limit (int): maximum number of packets to process. If 0, no limit is applied.
 
     Returns:
        List: Contains a dictionary for each packet in the pcap_file
     """
 
-    capture = pyshark.FileCapture(pcap_file)  #=
+    capture = pyshark.FileCapture(pcap_file)
     extracted_data_all = []
 
     i = 0
-    for packet in capture:
-        # if i == 0:
-        #     _ = packet['wlan.mgt']
-        #     print(packet['wlan.mgt'])
-        #     pass
-        # i += 1
+    for packet in tqdm(capture, desc="Extracting Data", unit="packet"):
+        if packet_limit != 0 and i >= packet_limit:
+            break  # Stop the loop if the packet limit is reached
+
         packet_data_all = {
             'bssid': None,
             'transmitter_mac': None,
@@ -60,7 +60,6 @@ def extract_all_data(pcap_file: str) -> list:
 
         if hasattr(packet, 'wlan'):
             packet_data_all['bssid'] = getattr(packet.wlan, 'bssid', None)
-            
             packet_data_all['transmitter_mac'] = getattr(packet.wlan, 'ta', None)
             packet_data_all['receiver_mac'] = getattr(packet.wlan, 'ra', None)
             packet_data_all['frame_type_subtype'] = getattr(packet.wlan, 'fc_type_subtype', None)
@@ -68,34 +67,30 @@ def extract_all_data(pcap_file: str) -> list:
 
         if hasattr(packet, 'wlan_radio'):
             packet_data_all['phy_type'] = getattr(packet.wlan_radio, 'phy', None)
-            packet_data_all['mcs_index'] = getattr(packet.wlan_radio, '11n.mcs_index', None)
-            bandwidth = getattr(packet.wlan_radio, '11n.bandwidth', None)
+            packet_data_all['mcs_index'] = getattr(packet.wlan_radio, '11ac.mcs_index', None)
+            bandwidth = getattr(packet.wlan_radio, '11ac.bandwidth', None)
             packet_data_all['bandwidth'] = "20 MHz" if bandwidth == "0" else bandwidth
-            packet_data_all['spatial_streams'] = getattr(packet.wlan_radio, '11n.num_sts', None)
-            packet_data_all['short_gi'] = getattr(packet.wlan_radio, '11n.short_gi', None)
+            packet_data_all['spatial_streams'] = getattr(packet.wlan_radio, '11ac.num_sts', None)
+            packet_data_all['short_gi'] = getattr(packet.wlan_radio, '11ac.short_gi', None)
             packet_data_all['data_rate'] = getattr(packet.wlan_radio, 'data_rate', None)
             packet_data_all['channel'] = getattr(packet.wlan_radio, 'channel', None)
             packet_data_all['signal_strength'] = getattr(packet.wlan_radio, 'signal_dbm', None)
             packet_data_all['snr'] = getattr(packet.wlan_radio, 'snr', None)
+            packet_data_all['timestamp'] = getattr(packet.wlan_radio, 'timestamp', None) 
 
         if hasattr(packet, 'radiotap'):
             packet_data_all['frequency'] = getattr(packet.radiotap, 'channel_freq', None)
 
-        #this is for ssid eg TUC   
+        # This is for SSID e.g. TUC   
         if 'wlan.mgt' in packet:
             ssid_tag = packet['wlan.mgt'].get('wlan.tag', None)
-            timestamps =packet['wlan.mgt'].get('wlan_fixed_timestamp', None)
-            #print(f"this is the {timestamps}\n\n")
-            packet_data_all['timestamp'] = timestamps
-            #print(f"\nFinal Extracted Data: {extracted_data_all}")
-            #############################DES TO META ###########################################
-            #packet_data_all['timestamp']  = packet['wlan.mgt'].get('wlan_fixed_timestamp', None)
-            #############################DES TO META ###########################################
             if ssid_tag and 'SSID parameter set:' in ssid_tag:
                 packet_data_all['ssid'] = ssid_tag.split('SSID parameter set: ')[-1].strip('"')
             else:
                 packet_data_all['ssid'] = None  
+        
         extracted_data_all.append(packet_data_all)
+        i += 1  # Increment packet count
 
     capture.close()
     return extracted_data_all
@@ -245,36 +240,42 @@ def find_rate_gap(expected_mcs_index, actual_mcs_index):
 
 def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> list:
     """
-    filters the packets with the corresponding sa mac and ta mac with a specific filter 
-
+    Filters the packets with the corresponding source MAC and destination MAC with a specific filter.
+    
     Args:
-        data_all (list): list of dictionaries with the extracted data from extract_all_data()
-        source_mac (str): The sa MAC address to filter.
-        dest_mac (str): The ta MAC address to filter.
+        data_all (list): List of dictionaries with the extracted data from extract_all_data().
+        source_mac (str): The source MAC address to filter.
+        dest_mac (str): The destination MAC address to filter.
+        filter: The filter to match on the "frame_type_subtype" field.
 
     Returns:
-        List: filtered list with only packets matching the source and destination MAC addresses.
+        list: A filtered list with only packets matching the source and destination MAC addresses and frame_type_subtype.
     """
     filtered_packets = [
         packet for packet in data_all
-        if packet.get("transmitter_mac") == source_mac and packet.get("receiver_mac") == dest_mac and packet.get("frame_type_subtype") == filter
+        if packet.get("transmitter_mac") == source_mac 
+        and packet.get("receiver_mac") == dest_mac 
+        and packet.get("frame_type_subtype") == filter
     ]
+    
+    print(f"Number of packets passing the filter: {len(filtered_packets)}")
+    
     return filtered_packets
 
-
 if __name__ == "__main__":
-    print("eimai kainourgio")
-    pcap_file = 'pcap_files/HowIWiFi_PCAP.pcap'  
+    print("Starting parser...")
+    pcap_file = 'analyzer/pcap_files/HowIWiFi_PCAP.pcap'  
+    print(f"Moving to extract data from {pcap_file}")
     data = extract_all_data(pcap_file)
+    print("Calculating rate gap...")
     data = add_rate_gap(data)
+    print("Rate gap calculation complete.\nData is ready for analysis.")    
     
     #data = find_spatial_streams(data)
-
     #filter beacon frames
     #beacon_frame_data = filter_beacon_frames(data)
 
     communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
-    
 
     print("\nBeacon Frames:")
     for i, packet_info in enumerate(communication_packets):
