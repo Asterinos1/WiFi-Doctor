@@ -59,7 +59,8 @@ def extract_beacon_frame_data(pcap_file: str) -> list:
     return extracted_data
 
 if __name__ == "__main__":
-    pcap_file = 'pcap_files/faye2p4.pcap'
+    pcap_file = 'analyzer/pcap_files/faye2p4.pcap'
+    print("Moving to extract beacon frame data...")
     beacon_data = extract_beacon_frame_data(pcap_file)
 
     for i, packet_info in enumerate(beacon_data):
