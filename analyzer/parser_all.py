@@ -1,6 +1,8 @@
 import pyshark
 from tqdm import tqdm
 import pdf_data
+import matplotlib.pyplot as plt
+import os
 
 def extract_all_data(pcap_file: str, packet_limit: int = 0) -> list:
     """
@@ -313,7 +315,8 @@ def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> li
     
     return filtered_packets
 
-def annotate_performance(data_all: list) -> None:
+# modified the method to save the results to file rather than printing them.
+def annotate_performance(data_all: list, file_writer) -> None:
     """
     Iterates over the packet list and prints diagnostic annotations for each packet:
     - [1] Wi-Fi configuration status: PHY type, bandwidth, and Short GI are interpreted.
@@ -335,7 +338,8 @@ def annotate_performance(data_all: list) -> None:
     }
 
     for i, packet in enumerate(data_all):
-        print(f"\n--- Packet #{i+1} ---")
+        #print(f"\n--- Packet #{i+1} ---")
+        file_writer.write(f"\n--- Packet #{i+1} ---")
 
         # === [1] Wi-Fi Configuration Status ===
         # This block interprets the PHY layer config of the packet:
@@ -360,13 +364,13 @@ def annotate_performance(data_all: list) -> None:
         if isinstance(bandwidth, str):
             bw_clean = bandwidth.strip().lower()
             if "20" in bw_clean:
-                config_notes.append("Bandwidth: 20 MHz (narrow channel – lower capacity, more robust to interference)")
+                config_notes.append("Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference)")
             elif "40" in bw_clean:
-                config_notes.append("Bandwidth: 40 MHz (moderate channel width – balanced capacity and interference risk)")
+                config_notes.append("Bandwidth: 40 MHz (moderate channel width, balanced capacity and interference risk)")
             elif "80" in bw_clean:
-                config_notes.append("Bandwidth: 80 MHz (high-speed channel – higher throughput, more sensitive to noise)")
+                config_notes.append("Bandwidth: 80 MHz (high-speed channel, higher throughput, more sensitive to noise)")
             elif "160" in bw_clean:
-                config_notes.append("Bandwidth: 160 MHz (very wide channel – maximum speed, highly susceptible to interference)")
+                config_notes.append("Bandwidth: 160 MHz (very wide channel, maximum speed, highly susceptible to interference)")
             else:
                 config_notes.append(f"Bandwidth: {bandwidth} (unknown format)")
         else:
@@ -382,7 +386,8 @@ def annotate_performance(data_all: list) -> None:
         else:
             config_notes.append("Short GI: Unknown")
 
-        print(f"[1] Config: {', '.join(config_notes)}")
+        #print(f"[1] Config: {', '.join(config_notes)}")
+        file_writer.write(f"\n[1] Config: {', '.join(config_notes)}")
 
         # === [2] Rate Gap Interpretation ===
         # We compare the expected MCS index (based on RSSI) with the actual one to detect underperformance.
@@ -403,7 +408,8 @@ def annotate_performance(data_all: list) -> None:
                 rate_gap_comment = f"Invalid rate_gap format: {rate_gap}"
         else:
             rate_gap_comment = "No rate gap info"
-        print(f"[2] Rate Gap: {rate_gap_comment}")
+        #print(f"[2] Rate Gap: {rate_gap_comment}")
+        file_writer.write(f"\n[2] Rate Gap: {rate_gap_comment}")
 
         # === [3] Interference Indicators ===
         # This section applies multiple heuristic rules (based on the paper) to detect symptoms of interference:
@@ -476,7 +482,8 @@ def annotate_performance(data_all: list) -> None:
             if not interference_detected:
                 interference_comment += " – symptoms present but interference not strongly confirmed"
 
-        print(f"[3] Interference: {interference_comment}")
+        #print(f"[3] Interference: {interference_comment}")
+        file_writer.write(f"\n[3] Interference: {interference_comment}")
 
 
 def filter_phy_info_packets(data_all: list) -> list:
@@ -525,14 +532,78 @@ def print_packet_data(data_all: list, limit: int = 0) -> None:
             print(f"{key}: {value}")
         count += 1
 
+# on this visualizer part.
+def plot_all_in_one(packets, pcap_file_name):
+    import matplotlib.pyplot as plt
+
+    # Process data
+    timestamps = list(range(len(packets)))
+    signal_values = [int(p['signal_strength']) for p in packets if p.get('signal_strength')]
+    retry_flags = [int(p['retry_flag']) for p in packets if p.get('retry_flag') in ['0', '1']]
+    mcs_vals = [int(p['mcs_index']) for p in packets if p.get('mcs_index')]
+    mcs_timestamps = [i for i, p in enumerate(packets) if p.get('mcs_index')]
+    dr_vs_rssi = [(float(p['data_rate']), int(p['signal_strength']))
+                  for p in packets if p.get('data_rate') and p.get('signal_strength')]
+
+    # Create 2x2 subplots (just like MATLAB's subplot(2,2,1)...)
+    fig, axs = plt.subplots(2, 2, figsize=(12, 9))
+    fig.suptitle(f"{pcap_file_name} Analysis", fontsize=16)
+
+    # --- (1,1): Signal Strength Over Time
+    axs[0, 0].plot(timestamps[:len(signal_values)], signal_values, marker='o')
+    axs[0, 0].set_title("Signal Strength Over Time")
+    axs[0, 0].set_xlabel("Packet #")
+    axs[0, 0].set_ylabel("Signal Strength (dBm)")
+    axs[0, 0].grid()
+
+    # --- (1,2): Retry Distribution
+    axs[0, 1].hist(retry_flags, bins=[-0.5, 0.5, 1.5], rwidth=0.6)
+    axs[0, 1].set_xticks([0, 1])
+    axs[0, 1].set_xticklabels(["No Retry", "Retry"])
+    axs[0, 1].set_title("Retry Flag Distribution")
+    axs[0, 1].set_xlabel("Retry Flag")
+    axs[0, 1].set_ylabel("Count")
+    axs[0, 1].grid()
+
+    # --- (2,1): MCS Index Over Time
+    axs[1, 0].plot(mcs_timestamps, mcs_vals, marker='.', color='purple')
+    axs[1, 0].set_title("MCS Index Over Time")
+    axs[1, 0].set_xlabel("Packet #")
+    axs[1, 0].set_ylabel("MCS Index")
+    axs[1, 0].grid()
+
+    # --- (2,2): Data Rate vs Signal Strength
+    if dr_vs_rssi:
+        data_rates, signals = zip(*dr_vs_rssi)
+        axs[1, 1].scatter(signals, data_rates, alpha=0.6)
+        axs[1, 1].set_title("Data Rate vs Signal Strength")
+        axs[1, 1].set_xlabel("Signal Strength (dBm)")
+        axs[1, 1].set_ylabel("Data Rate (Mbps)")
+        axs[1, 1].grid()
+
+    # Final layout
+    plt.tight_layout(rect=[0, 0.03, 1, 0.95])  # leave room for suptitle
+    plt.show()
+
+
 
 if __name__ == "__main__":
+
+    pcap_file = 'analyzer/pcap_files/1_2_testing_pcap_files/1_2_test_pcap2.pcap' 
+
+    # Extract filename without extension for analysis output
+    pcap_base = os.path.splitext(os.path.basename(pcap_file))[0]
+
+    # Create the output directory if it doesn't exist
+    output_dir = "analysis results"
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Path to the analysis output file
+    analysis_file_path = os.path.join(output_dir, f"{pcap_base}_analysis.txt")
+
     print("Starting parser...")
-
     print("Obtaining data for mcs index calculation.")
-    mcs_table = pdf_data.initialize_data()
-
-    pcap_file = 'analyzer/pcap_files/1_2_testing_pcap_files/1_2_test_pcap1.pcap'  
+    mcs_table = pdf_data.initialize_data() 
 
     print(f"Moving to extract data from {pcap_file}")
     data = extract_all_data(pcap_file)
@@ -553,13 +624,19 @@ if __name__ == "__main__":
 
     # phy_packets = filter_phy_info_packets(data)
 
-    annotate_performance(data)
+    with open(analysis_file_path, "w") as f:
+        annotate_performance(data, f)
+
+    print(f"Analysis written to: {analysis_file_path}")
+    
+    plot_all_in_one(data, pcap_file)
 
     # data = find_spatial_streams(data)
     # filter beacon frames
     # beacon_frame_data = filter_beacon_frames(data)
 
-    # communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
+    communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
+
     # # print_packet_data(communication_packets)
 
     # print("\nBeacon Frames:")
