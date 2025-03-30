@@ -159,7 +159,6 @@ def find_spatial_streams(data_all: list) -> list:
 
 #briskei to expected mcs index basei to rssi tou pinaka
 def find_expected_mcs_index(signal_strength, spatial_streams):
-
     if spatial_streams == 1:          
         if signal_strength >= -64:
             return 7  
@@ -250,6 +249,7 @@ def recover_missing_phy_info(packet, mcs_table):
 
 #bazei rate gap sto data[dict]
 def add_rate_gap(data_all: list) -> list:
+    counter=0
 
     for packet in data_all:
         if packet.get('spatial_streams') is None and packet.get('mcs_index') is not None:
@@ -275,10 +275,11 @@ def add_rate_gap(data_all: list) -> list:
                 # Compute the rate gap
                 actual_mcs_index = int(packet['mcs_index']) if packet.get('mcs_index') is not None else 0
                 packet['rate_gap'] = find_rate_gap(expected_mcs_index, actual_mcs_index)
-
+                counter+=1
             except (ValueError, TypeError):
                 packet['rate_gap'] = None  
 
+    print(f"Total rate_gap calculations: {counter}")
     return data_all
 
 
@@ -330,12 +331,20 @@ def annotate_performance(data_all: list) -> None:
         bandwidth = packet.get('bandwidth')
         short_gi = packet.get('short_gi')
 
+
         if phy in ['802.11a', '802.11b', '802.11g']:
-            config_issues.append("Legacy PHY type")
+            config_issues.append(f"Legacy PHY type {phy}")
+        else:
+            config_issues.append(f"PHY type: {phy}")
+
         if bandwidth == '20 MHz':
             config_issues.append("Low bandwidth")
+        else:
+            config_issues.append(f"Bandwidth: {bandwidth}")    
         if short_gi in ['0', 'False', False]:
             config_issues.append("Short GI not enabled")
+        else:
+            config_issues.append(f"Short GI: {short_gi}")
 
         config_comment = ", ".join(config_issues) if config_issues else "Good configuration"
         print(f"[Config] {config_comment}")
@@ -343,6 +352,8 @@ def annotate_performance(data_all: list) -> None:
         # -- Rate Gap Analysis --
         rate_gap = packet.get('rate_gap')
         if rate_gap is not None:
+            #debugging this.
+            print(rate_gap)
             try:
                 rg = int(rate_gap)
                 if rg >= 3:
@@ -431,33 +442,33 @@ if __name__ == "__main__":
     print("Obtaining data for mcs index calculation.")
     mcs_table = pdf_data.initialize_data()
 
-    pcap_file = 'analyzer/pcap_files/1_2_testing_pcap_files/1_2_test_pcap2.pcap'  
+    pcap_file = 'analyzer/pcap_files/1_2_testing_pcap_files/1_2_test_pcap1.pcap'  
 
     print(f"Moving to extract data from {pcap_file}")
     data = extract_all_data(pcap_file)
     print("Calculating rate gap...")
     data = add_rate_gap(data)
-    print("Rate gap calculation complete.\nData is ready for analysis.")    
-    
+    print("Rate gap calculation complete.")    
     print("Calculating missing MCS indexs:")
 
-    phy_packets = filter_phy_info_packets(data)
 
-    for packet in phy_packets:
+    for packet in data:
         recover_missing_phy_info(packet, mcs_table)
+
+
+    # print("\n\t ** Calculation of MCS Index and Spatial group complete. **\n")
+    print("Data is ready to be analyzed!.")
 
     # phy_packets = filter_phy_info_packets(data)
 
-    print_packet_data(phy_packets)    
-
-    # annotate_performance(data)
+    annotate_performance(data)
 
     #data = find_spatial_streams(data)
     #filter beacon frames
     #beacon_frame_data = filter_beacon_frames(data)
 
     # communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
-    # print_packet_data(communication_packets)
+    # # print_packet_data(communication_packets)
 
     # print("\nBeacon Frames:")
     # for i, packet_info in enumerate(communication_packets):

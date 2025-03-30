@@ -343,7 +343,7 @@ def estimate_spatial_streams(rssi, mhz, short_gi, target_data_rate, data):
             if row["HT MCS"] is None:
                 continue
             if row[rate_column] == target_data_rate and rssi >= row[rssi_column]:
-                print("Spatial group aquired.")
+                #print("Spatial group aquired.")
                 return group  # Match found
     return None
 
@@ -370,7 +370,7 @@ def estimate_mcs_index(rssi, mhz, short_gi, target_data_rate, data):
         if row["HT MCS"] is None:
             continue
         if row[rate_column] == target_data_rate and rssi >= row[rssi_column]:
-            print("MCS Index aquired.")
+            #print("MCS Index aquired.")
             return row["HT MCS"]
     return None
 
