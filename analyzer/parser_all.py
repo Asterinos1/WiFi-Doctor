@@ -316,61 +316,80 @@ def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> li
 def annotate_performance(data_all: list) -> None:
     """
     Iterates over the packet list and prints diagnostic annotations for each packet:
-    - Wi-Fi configuration status
-    - Rate gap interpretation
+    - Wi-Fi configuration status (includes PHY type interpretation)
+    - Rate gap interpretation (with value)
     - Interference indicators
-
-    This version does not modify or return the data — it only prints.
     """
+    PHY_TYPE_MAPPING = {
+        "1": "FHSS (very old)",
+        "2": "DSSS (very old)",
+        "3": "IR Baseband",
+        "4": "OFDM (802.11a/g)",
+        "5": "HR/DSSS (802.11b)",
+        "6": "ERP (802.11g)",
+        "7": "HT (802.11n)",
+        "8": "DMG (802.11ad)",
+        "9": "VHT (802.11ac)",
+        "10": "HE (802.11ax - Wi-Fi 6)",
+        "11": "EHT (802.11be - Wi-Fi 7)"
+    }
+
     for i, packet in enumerate(data_all):
         print(f"\n--- Packet #{i+1} ---")
 
-        # -- Wi-Fi Configuration Comments --
-        config_issues = []
-        phy = packet.get('phy_type', '').lower()
+        # === Wi-Fi Configuration Status ===
+        config_notes = []
+        raw_phy = packet.get('phy_type', '').lower()
         bandwidth = packet.get('bandwidth')
         short_gi = packet.get('short_gi')
 
-
-        if phy in ['802.11a', '802.11b', '802.11g']:
-            config_issues.append(f"Legacy PHY type {phy}")
+        # Interpret PHY number if numeric
+        if raw_phy.isdigit():
+            phy_desc = PHY_TYPE_MAPPING.get(raw_phy, "Unknown PHY")
+            config_notes.append(f"PHY Type {raw_phy} -> {phy_desc}")
+        elif raw_phy:
+            config_notes.append(f"PHY Type: {raw_phy}")
         else:
-            config_issues.append(f"PHY type: {phy}")
+            config_notes.append("PHY Type: Unavailable")
 
-        if bandwidth == '20 MHz':
-            config_issues.append("Low bandwidth")
+        # Bandwidth check
+        if bandwidth == "20 MHz":
+            config_notes.append("Low bandwidth (20 MHz)")
+        elif bandwidth:
+            config_notes.append(f"Bandwidth: {bandwidth}")
         else:
-            config_issues.append(f"Bandwidth: {bandwidth}")    
-        if short_gi in ['0', 'False', False]:
-            config_issues.append("Short GI not enabled")
+            config_notes.append("Bandwidth: Unavailable")
+
+        # Short GI
+        if str(short_gi).lower() in ['0', 'false', 'none']:
+            config_notes.append("Short GI: Disabled")
+        elif short_gi is not None:
+            config_notes.append("Short GI: Enabled")
         else:
-            config_issues.append(f"Short GI: {short_gi}")
+            config_notes.append("Short GI: Unknown")
 
-        config_comment = ", ".join(config_issues) if config_issues else "Good configuration"
-        print(f"[Config] {config_comment}")
+        print(f"[1] Config: {', '.join(config_notes)}")
 
-        # -- Rate Gap Analysis --
+        # === Rate Gap Interpretation ===
         rate_gap = packet.get('rate_gap')
         if rate_gap is not None:
-            #debugging this.
-            print(rate_gap)
             try:
                 rg = int(rate_gap)
-                if rg >= 3:
-                    rate_gap_comment = "Significant underperformance"
-                elif rg > 0:
-                    rate_gap_comment = "Slight underperformance"
-                elif rg == 0:
-                    rate_gap_comment = "Expected performance"
-                else:
-                    rate_gap_comment = "Rate adaptation overshoot"
+                if rg == 0:
+                    rate_gap_comment = "Expected performance (rate gap: 0)"
+                elif 0 < rg <= 3:
+                    rate_gap_comment = f"Slight performance drop - still below threshold (rate gap: {rg})"
+                elif rg > 3:
+                    rate_gap_comment = f"Performance getting poorer - surpassed threshold (rate gap: {rg})"
+                elif rg < 0:
+                    rate_gap_comment = f"Rate overshoot (rate gap: {rg})"
             except ValueError:
-                rate_gap_comment = "Invalid rate_gap format"
+                rate_gap_comment = f"Invalid rate_gap format: {rate_gap}"
         else:
             rate_gap_comment = "No rate gap info"
-        print(f"[Rate Gap] {rate_gap_comment}")
+        print(f"[2] Rate Gap: {rate_gap_comment}")
 
-        # -- Interference / Channel Comments --
+        # === Interference Indicators ===
         interference = []
         retry_flag = packet.get('retry_flag')
         snr = packet.get('snr')
@@ -382,12 +401,17 @@ def annotate_performance(data_all: list) -> None:
             try:
                 snr_val = float(snr)
                 if snr_val < 20:
-                    interference.append("Low SNR - noisy channel")
+                    interference.append(f"Low SNR ({snr_val:.1f} dB) - noisy channel")
+                else:
+                    interference.append(f"SNR: {snr_val:.1f} dB")
             except ValueError:
                 interference.append("Invalid SNR format")
 
         interference_comment = ", ".join(interference) if interference else "No interference signs"
-        print(f"[Interference] {interference_comment}")
+        print(f"[3] Interference: {interference_comment}")
+
+
+
 
 def filter_phy_info_packets(data_all: list) -> list:
     """
@@ -447,14 +471,16 @@ if __name__ == "__main__":
     print(f"Moving to extract data from {pcap_file}")
     data = extract_all_data(pcap_file)
     print("Calculating rate gap...")
-    data = add_rate_gap(data)
+    # data = add_rate_gap(data)
     print("Rate gap calculation complete.")    
     print("Calculating missing MCS indexs:")
 
+    data = filter_phy_info_packets(data)
 
     for packet in data:
         recover_missing_phy_info(packet, mcs_table)
 
+    data = add_rate_gap(data)
 
     # print("\n\t ** Calculation of MCS Index and Spatial group complete. **\n")
     print("Data is ready to be analyzed!.")
@@ -463,9 +489,9 @@ if __name__ == "__main__":
 
     annotate_performance(data)
 
-    #data = find_spatial_streams(data)
-    #filter beacon frames
-    #beacon_frame_data = filter_beacon_frames(data)
+    # data = find_spatial_streams(data)
+    # filter beacon frames
+    # beacon_frame_data = filter_beacon_frames(data)
 
     # communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
     # # print_packet_data(communication_packets)
