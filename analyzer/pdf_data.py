@@ -221,6 +221,8 @@ def initialize_data():
         }
         data.append(row)
     
+    print("\n\t ** pdf_data.py : Succesfull Initialization! **\n")
+
     return data
 
 
@@ -313,4 +315,62 @@ def get_expected_mcs_index(data_rate, data_rate_type, mhz, spatial_group, data):
                 return row["HT MCS"]  # Return the HT MCS (index)
 
     return None  # Return None if no match is found
+
+# New stuff here to calculate spatial streams and mcs index.
+
+def estimate_spatial_streams(rssi, mhz, short_gi, target_data_rate, data):
+    """
+    Estimate the number of spatial streams based on RSSI, MHz, guard interval, and target data rate.
+
+    Parameters:
+        rssi (float): The RSSI signal strength (in dBm).
+        mhz (int): The channel bandwidth in MHz (e.g., 20, 40, 80, 160).
+        short_gi (bool): True for 400ns, False for 800ns.
+        target_data_rate (float): The desired data rate to match.
+        data (list): The dataset.
+
+    Returns:
+        int or None: The estimated number of spatial streams (1, 2, or 3), or None if not matched.
+    """
+    gi = "400ns" if short_gi else "800ns"
+    rate_column = f"{mhz} MHz {gi}"
+    rssi_column = f"{mhz} MHz RSSI"
+
+    for group in range(1, 4):  # spatial groups 1, 2, 3
+        for i in range(10):
+            idx = (group - 1) * 10 + i
+            row = data[idx]
+            if row["HT MCS"] is None:
+                continue
+            if row[rate_column] == target_data_rate and rssi >= row[rssi_column]:
+                print("Spatial group aquired.")
+                return group  # Match found
+    return None
+
+
+def estimate_mcs_index(rssi, mhz, short_gi, target_data_rate, data):
+    """
+    Estimate the HT MCS index based on RSSI, MHz, guard interval, and data rate.
+
+    Parameters:
+        rssi (float): The RSSI signal strength (in dBm).
+        mhz (int): The channel bandwidth in MHz (e.g., 20, 40, 80, 160).
+        short_gi (bool): True for 400ns, False for 800ns.
+        target_data_rate (float): The desired data rate to match.
+        data (list): The dataset.
+
+    Returns:
+        int or None: The best matching HT MCS index, or None if not found.
+    """
+    gi = "400ns" if short_gi else "800ns"
+    rate_column = f"{mhz} MHz {gi}"
+    rssi_column = f"{mhz} MHz RSSI"
+
+    for row in data:
+        if row["HT MCS"] is None:
+            continue
+        if row[rate_column] == target_data_rate and rssi >= row[rssi_column]:
+            print("MCS Index aquired.")
+            return row["HT MCS"]
+    return None
 
