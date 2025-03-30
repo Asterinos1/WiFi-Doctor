@@ -316,9 +316,9 @@ def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> li
 def annotate_performance(data_all: list) -> None:
     """
     Iterates over the packet list and prints diagnostic annotations for each packet:
-    - Wi-Fi configuration status (includes PHY type interpretation)
-    - Rate gap interpretation (with value)
-    - Interference indicators
+    - [1] Wi-Fi configuration status: PHY type, bandwidth, and Short GI are interpreted.
+    - [2] Rate gap interpretation: Shows how far the actual MCS index deviates from expected.
+    - [3] Interference indicators: Applies inference rules from literature to detect channel issues.
     """
     PHY_TYPE_MAPPING = {
         "1": "FHSS (very old)",
@@ -337,13 +337,17 @@ def annotate_performance(data_all: list) -> None:
     for i, packet in enumerate(data_all):
         print(f"\n--- Packet #{i+1} ---")
 
-        # === Wi-Fi Configuration Status ===
+        # === [1] Wi-Fi Configuration Status ===
+        # This block interprets the PHY layer config of the packet:
+        # - PHY type is mapped to standard name
+        # - Bandwidth is translated and annotated
+        # - Short GI (guard interval) is explained in terms of performance tradeoffs
         config_notes = []
         raw_phy = packet.get('phy_type', '').lower()
         bandwidth = packet.get('bandwidth')
         short_gi = packet.get('short_gi')
 
-        # Interpret PHY number if numeric
+        # PHY Type
         if raw_phy.isdigit():
             phy_desc = PHY_TYPE_MAPPING.get(raw_phy, "Unknown PHY")
             config_notes.append(f"PHY Type {raw_phy} -> {phy_desc}")
@@ -352,25 +356,37 @@ def annotate_performance(data_all: list) -> None:
         else:
             config_notes.append("PHY Type: Unavailable")
 
-        # Bandwidth check
-        if bandwidth == "20 MHz":
-            config_notes.append("Low bandwidth (20 MHz)")
-        elif bandwidth:
-            config_notes.append(f"Bandwidth: {bandwidth}")
+        # Bandwidth Interpretation
+        if isinstance(bandwidth, str):
+            bw_clean = bandwidth.strip().lower()
+            if "20" in bw_clean:
+                config_notes.append("Bandwidth: 20 MHz (narrow channel – lower capacity, more robust to interference)")
+            elif "40" in bw_clean:
+                config_notes.append("Bandwidth: 40 MHz (moderate channel width – balanced capacity and interference risk)")
+            elif "80" in bw_clean:
+                config_notes.append("Bandwidth: 80 MHz (high-speed channel – higher throughput, more sensitive to noise)")
+            elif "160" in bw_clean:
+                config_notes.append("Bandwidth: 160 MHz (very wide channel – maximum speed, highly susceptible to interference)")
+            else:
+                config_notes.append(f"Bandwidth: {bandwidth} (unknown format)")
         else:
             config_notes.append("Bandwidth: Unavailable")
 
-        # Short GI
+        # Short GI Interpretation
         if str(short_gi).lower() in ['0', 'false', 'none']:
-            config_notes.append("Short GI: Disabled")
+            config_notes.append("Short GI: Disabled (lower error rate, but slightly reduced throughput)")
+        elif str(short_gi).lower() in ['1', 'true', 'yes']:
+            config_notes.append("Short GI: Enabled (higher throughput – but more sensitive to multipath interference)")
         elif short_gi is not None:
-            config_notes.append("Short GI: Enabled")
+            config_notes.append(f"Short GI: {short_gi} (non-standard value)")
         else:
             config_notes.append("Short GI: Unknown")
 
         print(f"[1] Config: {', '.join(config_notes)}")
 
-        # === Rate Gap Interpretation ===
+        # === [2] Rate Gap Interpretation ===
+        # We compare the expected MCS index (based on RSSI) with the actual one to detect underperformance.
+        # A small rate gap is normal, but large deviations point to either interference or suboptimal rate adaptation.
         rate_gap = packet.get('rate_gap')
         if rate_gap is not None:
             try:
@@ -389,28 +405,78 @@ def annotate_performance(data_all: list) -> None:
             rate_gap_comment = "No rate gap info"
         print(f"[2] Rate Gap: {rate_gap_comment}")
 
-        # === Interference Indicators ===
+        # === [3] Interference Indicators ===
+        # This section applies multiple heuristic rules (based on the paper) to detect symptoms of interference:
+        # - High RateGap despite good RSSI
+        # - High retries with good SNR
+        # - Low SNR in general
+        # - Wide bandwidth links underperforming
         interference = []
         retry_flag = packet.get('retry_flag')
         snr = packet.get('snr')
+        rssi = packet.get('signal_strength')
+        rg = None
+        try:
+            rg = int(packet['rate_gap']) if packet.get('rate_gap') is not None else None
+        except ValueError:
+            rg = None
 
+        # Retry flag-based
         if retry_flag == '1':
-            interference.append("High retry rate - possible interference")
+            interference.append("High retry rate – retransmissions suggest interference, contention or signal loss")
 
+        # SNR-based
         if snr is not None:
             try:
                 snr_val = float(snr)
                 if snr_val < 20:
-                    interference.append(f"Low SNR ({snr_val:.1f} dB) - noisy channel")
+                    interference.append(f"Low SNR ({snr_val:.1f} dB) – poor signal quality or noise")
                 else:
-                    interference.append(f"SNR: {snr_val:.1f} dB")
+                    interference.append(f"SNR: {snr_val:.1f} dB – signal quality acceptable")
             except ValueError:
                 interference.append("Invalid SNR format")
 
-        interference_comment = ", ".join(interference) if interference else "No interference signs"
+        # === Interference Detection Heuristics ===
+        # Each condition below raises the probability that this packet suffered from interference.
+
+        interference_detected = False
+
+        # High RateGap + Good RSSI ⇒ likely interference or poor rate adaptation
+        try:
+            if rg is not None and rg > 3 and rssi is not None:
+                rssi_val = int(rssi)
+                if rssi_val > -70:
+                    interference.append("Strong signal (RSSI > -70 dBm) but poor rate – interference likely")
+                    interference_detected = True
+        except ValueError:
+            pass
+
+        # Retry + Good SNR ⇒ hidden terminals or medium access contention
+        try:
+            if retry_flag == '1' and snr is not None and float(snr) >= 20:
+                interference.append("Retries despite good SNR – possible hidden terminals or congested medium")
+                interference_detected = True
+        except ValueError:
+            pass
+
+        # Wide Bandwidth + RateGap ⇒ high sensitivity to interference
+        try:
+            bw_str = str(packet.get('bandwidth')).lower()
+            if rg is not None and rg > 3 and any(x in bw_str for x in ['80', '160']):
+                interference.append(f"Wide bandwidth ({bw_str}) with poor performance – likely interference or poor channel conditions")
+                interference_detected = True
+        except Exception:
+            pass
+
+        # Final result printing
+        if not interference:
+            interference_comment = "Little to none interference signs"
+        else:
+            interference_comment = ", ".join(interference)
+            if not interference_detected:
+                interference_comment += " – symptoms present but interference not strongly confirmed"
+
         print(f"[3] Interference: {interference_comment}")
-
-
 
 
 def filter_phy_info_packets(data_all: list) -> list:
