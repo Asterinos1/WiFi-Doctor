@@ -429,16 +429,16 @@ def annotate_performance(data_all: list, file_writer) -> None:
 
         # Retry flag-based
         if retry_flag == '1':
-            interference.append("High retry rate – retransmissions suggest interference, contention or signal loss")
+            interference.append("High retry rate , retransmissions suggest interference, contention or signal loss")
 
         # SNR-based
         if snr is not None:
             try:
                 snr_val = float(snr)
                 if snr_val < 20:
-                    interference.append(f"Low SNR ({snr_val:.1f} dB) – poor signal quality or noise")
+                    interference.append(f"Low SNR ({snr_val:.1f} dB) , poor signal quality or noise")
                 else:
-                    interference.append(f"SNR: {snr_val:.1f} dB – signal quality acceptable")
+                    interference.append(f"SNR: {snr_val:.1f} dB , signal quality acceptable")
             except ValueError:
                 interference.append("Invalid SNR format")
 
@@ -452,7 +452,7 @@ def annotate_performance(data_all: list, file_writer) -> None:
             if rg is not None and rg > 3 and rssi is not None:
                 rssi_val = int(rssi)
                 if rssi_val > -70:
-                    interference.append("Strong signal (RSSI > -70 dBm) but poor rate – interference likely")
+                    interference.append("Strong signal (RSSI > -70 dBm) but poor rate , interference likely")
                     interference_detected = True
         except ValueError:
             pass
@@ -460,7 +460,7 @@ def annotate_performance(data_all: list, file_writer) -> None:
         # Retry + Good SNR ⇒ hidden terminals or medium access contention
         try:
             if retry_flag == '1' and snr is not None and float(snr) >= 20:
-                interference.append("Retries despite good SNR – possible hidden terminals or congested medium")
+                interference.append("Retries despite good SNR , possible hidden terminals or congested medium")
                 interference_detected = True
         except ValueError:
             pass
@@ -469,7 +469,7 @@ def annotate_performance(data_all: list, file_writer) -> None:
         try:
             bw_str = str(packet.get('bandwidth')).lower()
             if rg is not None and rg > 3 and any(x in bw_str for x in ['80', '160']):
-                interference.append(f"Wide bandwidth ({bw_str}) with poor performance – likely interference or poor channel conditions")
+                interference.append(f"Wide bandwidth ({bw_str}) with poor performance , likely interference or poor channel conditions")
                 interference_detected = True
         except Exception:
             pass
@@ -480,7 +480,7 @@ def annotate_performance(data_all: list, file_writer) -> None:
         else:
             interference_comment = ", ".join(interference)
             if not interference_detected:
-                interference_comment += " – symptoms present but interference not strongly confirmed"
+                interference_comment += " , symptoms present but interference not strongly confirmed"
 
         #print(f"[3] Interference: {interference_comment}")
         file_writer.write(f"\n[3] Interference: {interference_comment}")
