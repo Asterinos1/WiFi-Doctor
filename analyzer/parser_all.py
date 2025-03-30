@@ -534,8 +534,6 @@ def print_packet_data(data_all: list, limit: int = 0) -> None:
 
 # on this visualizer part.
 def plot_all_in_one(packets, pcap_file_name):
-    import matplotlib.pyplot as plt
-
     # Process data
     timestamps = list(range(len(packets)))
     signal_values = [int(p['signal_strength']) for p in packets if p.get('signal_strength')]
