@@ -1,0 +1,201 @@
+
+--- Packet #1 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #2 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #3 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #4 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #5 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #6 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #7 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #8 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #9 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #10 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #11 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #12 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 2)
+[3] Interference: Little to none interference signs
+--- Packet #13 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #14 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #15 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #16 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #17 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #18 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #19 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #20 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #21 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #22 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #23 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #24 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #25 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #26 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #27 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #28 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #29 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #30 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #31 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #32 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #33 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #34 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #35 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #36 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #37 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #38 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #39 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #40 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #41 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #42 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #43 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #44 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #45 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #46 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #47 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #48 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #49 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #50 ---
+[1] Config: PHY Type 7 -> HT (802.11n), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Enabled (higher throughput – but more sensitive to multipath interference)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
