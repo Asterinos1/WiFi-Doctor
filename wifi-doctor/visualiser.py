@@ -66,8 +66,9 @@ def plot_rssid_over_time():
     plt.xticks(rotation=30)
     plt.gca().xaxis.set_major_locator(plt.MaxNLocator(integer=True))
 
-    plt.show()
     plt.savefig("rssid_plot.png")
+    plt.show()
+    # plt.savefig("rssid_plot.png")
 
 
 # Plot RSSI (signal strength) over time
@@ -82,8 +83,9 @@ def plot_signal_strength_over_time():
     plt.ylabel("RSSI (dBm)")
     plt.title("Signal Strength Over Time")
     plt.grid(True, linestyle='--', alpha=0.6)
-    plt.show()
     plt.savefig("rssi_plot.png")
+    plt.show()
+    # plt.savefig("rssi_plot.png")
 
 def print_throughput(throughput_data):
     print(f"Calculate Throughput: {throughput_data} Mbps")

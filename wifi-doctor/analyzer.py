@@ -770,6 +770,7 @@ def plot_all_in_one(packets, pcap_file_name):
         axs[2, 1].grid()
 
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+    plt.savefig("analysis.png")
     plt.show()
 
 def calculate_averages(data_all: list) -> dict:

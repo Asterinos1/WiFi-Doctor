@@ -53,7 +53,7 @@ def run_analysis(pcap_file, parser_name):
             communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
         elif file_name == "faye2p4.pcap":
             print("faye2p4.pcap (downlink)  detected.")
-            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:b0", "02:33:f6:61:e2:57")
+            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:b6", "dc:e9:94:2a:68:31")
         elif file_name in ["1_2_test_pcap1.pcap", "1_2_test_pcap2.pcap"]:
             print("1_2_test_pcapX.pcap (downlink)  detected.")
             communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:bb", "dc:e9:94:2a:68:31")
@@ -69,7 +69,7 @@ def run_analysis(pcap_file, parser_name):
             communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
         elif file_name == "faye2p4.pcap":
             print("faye2p4.pcap (downlink)  detected.")
-            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:b0", "02:33:f6:61:e2:57")
+            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:b6", "dc:e9:94:2a:68:31")
         elif file_name in ["1_2_test_pcap1.pcap", "1_2_test_pcap2.pcap"]:
             print("1_2_test_pcapX.pcap (downlink)  detected.")
             communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:bb", "dc:e9:94:2a:68:31")
@@ -84,7 +84,7 @@ def run_analysis(pcap_file, parser_name):
             communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
         elif file_name == "faye2p4.pcap":
             print("faye2p4.pcap (downlink)  detected.")
-            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:b0", "02:33:f6:61:e2:57")
+            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:b6", "dc:e9:94:2a:68:31")
         elif file_name in ["1_2_test_pcap1.pcap", "1_2_test_pcap2.pcap"]:
             print("1_2_test_pcapX.pcap (downlink)  detected.")
             communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:bb", "dc:e9:94:2a:68:31")
@@ -93,6 +93,8 @@ def run_analysis(pcap_file, parser_name):
     else:
         print("[ERROR] Invalid parser name.")
         return
+
+    print(f"Amount of communication packets: {len(communication_packets)}")
 
     # === Performance Monitoring ===
     rssi_history = {}
@@ -107,16 +109,19 @@ def run_analysis(pcap_file, parser_name):
     avg_rssi = compute_downlink_signal_strength(communication_packets, rssi_log)
     save_rssi_log(rssi_log)
 
-    # print(f"\n[INFO] Average Signal Strength: {avg_rssi:.2f} dBm")
-    # print("[INFO] Signal Quality Analysis:", analyze_signal_quality(avg_rssi))
+    if(avg_rssi is None):
+        print(f"\nError in calculating avg_rssi, it's None")
+    else:
+        print(f"\n[INFO] Average Signal Strength: {avg_rssi:.2f} dBm")
+        print("[INFO] Signal Quality Analysis:", analyze_signal_quality(avg_rssi))
 
     # # === Throughput Calculation ===
-    # throughput = calculate_throughput(communication_packets)
-    # print_throughput(throughput)
+    throughput = calculate_throughput(communication_packets)
+    print_throughput(throughput)
 
     # # === Visualize Results ===
-    # plot_rssid_over_time()
-    # plot_signal_strength_over_time()
+    plot_rssid_over_time()
+    plot_signal_strength_over_time()
 
     # === Annotate and Save Analysis ===
     base_name = os.path.basename(pcap_file).replace(".pcap", "")
@@ -138,7 +143,7 @@ def main():
         parser_map = {
             "1": "parser_all",
             "2": "parser_for_testing",
-            "3": "parser_home"
+            "3": "parser_home (for dev purposes, contains bugs)"
         }
 
         selected_parser = parser_map.get(parser_choice)

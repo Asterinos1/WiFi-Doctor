@@ -56,7 +56,8 @@ def extract_all_data(pcap_file: str) -> list:
             'retry_flag': None,
             'snr': None,
             'ssid': None,
-            'timestamp': None
+            'timestamp': None,
+            'tsf_timestamp': None
         }
 
         if hasattr(packet, 'wlan'):
@@ -78,6 +79,7 @@ def extract_all_data(pcap_file: str) -> list:
             packet_data_all['channel'] = getattr(packet.wlan_radio, 'channel', None)
             packet_data_all['signal_strength'] = getattr(packet.wlan_radio, 'signal_dbm', None)
             packet_data_all['snr'] = getattr(packet.wlan_radio, 'snr', None)
+            packet_data_all['tsf_timestamp'] = getattr(packet.wlan_radio, 'timestamp', None)
 
         if hasattr(packet, 'radiotap'):
             packet_data_all['frequency'] = getattr(packet.radiotap, 'channel_freq', None)
