@@ -115,6 +115,123 @@ def extract_all_data(pcap_file: str, packet_limit: int = 0) -> list:
     return extracted_data_all
 
 
+def find_spatial_streams(data_all: list) -> list:
+    """
+    If the spatial streams inforamtion is missing, find the spatial streams based on table[4]
+    with MCS index.
+
+    Args:
+        data_all (list): list of dictionaries with the extracted data from extract_all_data()
+
+    Returns:
+        List: new list with assigned spatial stream values.
+    """
+    for packet in data_all:
+        if packet.get('spatial_streams') is None and packet.get('mcs_index') is not None:
+            try:
+                mcs_index = int(packet['mcs_index'])  
+                if 1 <= mcs_index <= 7:
+                    packet['spatial_streams'] = 1
+                elif 8 <= mcs_index <= 15:
+                    packet['spatial_streams'] = 2
+                elif 16 <= mcs_index <= 23:
+                    packet['spatial_streams'] = 3
+            except ValueError:
+                pass 
+        else:
+            packet['spatial_streams'] = 1
+
+
+    return data_all
+
+#briskei to expected mcs index basei to rssi tou pinaka
+def find_expected_mcs_index(signal_strength, spatial_streams):
+
+    if spatial_streams == 1:          
+        if signal_strength >= -64:
+            return 7  
+        elif -65 <= signal_strength < -64:
+            return 6 
+        elif -66 <= signal_strength < -65:
+            return 5
+        elif -70 <= signal_strength < -66:
+            return 4
+        elif -74 <= signal_strength < -70:
+            return 3
+        elif -77 <= signal_strength < -74:
+            return 2
+        elif -79 <= signal_strength < -77:
+            return 1
+        else:
+            return 0
+    if spatial_streams == 2:
+        if signal_strength >= -64:
+            return 15   
+        elif -65 <= signal_strength < -64:
+            return 14 
+        elif -66 <= signal_strength < -65:
+            return 13
+        elif -70 <= signal_strength < -66:
+            return 12
+        elif -74 <= signal_strength < -70:
+            return 11
+        elif -77 <= signal_strength < -74:
+            return 10
+        elif -79 <= signal_strength < -77:
+            return 9
+        else:
+            return 8
+    if spatial_streams == 3:
+        if signal_strength >= -64:
+            return 23  
+        elif -65 <= signal_strength < -64:
+            return 22 
+        elif -66 <= signal_strength < -65:
+            return 21
+        elif -70 <= signal_strength < -66:
+            return 20
+        elif -74 <= signal_strength < -70:
+            return 19
+        elif -77 <= signal_strength < -74:
+            return 18
+        elif -79 <= signal_strength < -77:
+            return 17
+        else:
+            return 16
+
+#bazei rate gap sto data[dict]
+def add_rate_gap(data_all: list) -> list:
+
+    for packet in data_all:
+        if packet.get('spatial_streams') is None and packet.get('mcs_index') is not None:
+            try:
+                mcs_index = int(packet['mcs_index'])
+                if 1 <= mcs_index <= 7:
+                    packet['spatial_streams'] = 1
+                elif 8 <= mcs_index <= 15:
+                    packet['spatial_streams'] = 2
+                elif 16 <= mcs_index <= 23:
+                    packet['spatial_streams'] = 3
+                else:
+                    packet['spatial_streams'] = None
+            except ValueError:
+                packet['spatial_streams'] = None
+        
+        if packet.get('signal_strength') is not None and packet.get('spatial_streams') is not None:
+            try:
+                signal_strength = int(packet['signal_strength'])
+                spatial_streams = int(packet['spatial_streams'])
+                expected_mcs_index = find_expected_mcs_index(signal_strength, spatial_streams)
+
+                # Compute the rate gap
+                actual_mcs_index = int(packet['mcs_index']) if packet.get('mcs_index') is not None else 0
+                packet['rate_gap'] = find_rate_gap(expected_mcs_index, actual_mcs_index)
+
+            except (ValueError, TypeError):
+                packet['rate_gap'] = None  
+
+    return data_all
+
 def filter_beacon_frames(data_all: list) -> list:
     """
     This Method takes the frame_type_subtype and checks if it is a beacon frame, then adds it
@@ -315,6 +432,27 @@ def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> li
     
     print(f"Number of packets passing the filter (HowIWiFi_PCAP.pcap required): {len(filtered_packets)}")
     
+    return filtered_packets
+
+def no_filter_for_1_2(data_all: list, source_mac: str, dest_mac: str) -> list:
+    counter=0
+    """
+    filters the packets with the corresponding sa mac and ta mac with a specific filter 
+
+    Args:
+        data_all (list): list of dictionaries with the extracted data from extract_all_data()
+        source_mac (str): The sa MAC address to filter.
+        dest_mac (str): The ta MAC address to filter.
+
+    Returns:
+        List: filtered list with only packets matching the source and destination MAC addresses.
+    """
+    filtered_packets = [
+        packet for packet in data_all
+        if packet.get("transmitter_mac") == source_mac and packet.get("receiver_mac") == dest_mac 
+    ]
+
+    print(f"Total packets filtered by no filter {len(filtered_packets)}")
     return filtered_packets
 
 # modified the method to save the results to file rather than printing them.
@@ -536,38 +674,39 @@ def print_packet_data(data_all: list, limit: int = 0) -> None:
 
 # on this visualizer part.
 def plot_all_in_one(packets, pcap_file_name):
-    # Process data
+    # Extract and process data
     timestamps = list(range(len(packets)))
-    signal_values = [int(p['signal_strength']) for p in packets if p.get('signal_strength')]
-    mcs_vals = [int(p['mcs_index']) for p in packets if p.get('mcs_index')]
-    mcs_timestamps = [i for i, p in enumerate(packets) if p.get('mcs_index')]
+    signal_values = [int(p['signal_strength']) for p in packets if p.get('signal_strength') is not None]
+    mcs_vals = [int(p['mcs_index']) for p in packets if p.get('mcs_index') is not None]
+    mcs_timestamps = [i for i, p in enumerate(packets) if p.get('mcs_index') is not None]
     dr_vs_rssi = [(float(p['data_rate']), int(p['signal_strength']))
                   for p in packets if p.get('data_rate') and p.get('signal_strength')]
-    
+
+    rate_gaps = [int(p['rate_gap']) for p in packets if p.get('rate_gap') is not None]
+    rg_signal_pairs = [(int(p['signal_strength']), int(p['rate_gap']))
+                       for p in packets if p.get('rate_gap') is not None and p.get('signal_strength') is not None]
+    rg_indices = [i for i, p in enumerate(packets) if p.get('rate_gap') is not None]
+
     retry_flags = []
-
     for p in packets:
-        retry_raw = p.get('retry_flag')
-        if retry_raw is not None:
-            val = str(retry_raw).strip().lower()
-            if val in ['1', 'true']:
-                retry_flags.append(1)
-            elif val in ['0', 'false']:
-                retry_flags.append(0)
+        val = str(p.get('retry_flag', '')).strip().lower()
+        if val in ['1', 'true']:
+            retry_flags.append(1)
+        elif val in ['0', 'false']:
+            retry_flags.append(0)
 
-
-    # Create 2x2 subplots
-    fig, axs = plt.subplots(2, 2, figsize=(12, 9))
+    # Set up a 3x2 plot grid
+    fig, axs = plt.subplots(3, 2, figsize=(14, 12))
     fig.suptitle(f"{pcap_file_name} Analysis", fontsize=16)
 
-    # --- (1,1): Signal Strength Over Time
-    axs[0, 0].plot(timestamps[:len(signal_values)], signal_values, marker='o')
+    # (1,1): Signal Strength Over Time
+    axs[0, 0].scatter(timestamps[:len(signal_values)], signal_values, marker='o')
     axs[0, 0].set_title("Signal Strength Over Time")
     axs[0, 0].set_xlabel("Packet #")
     axs[0, 0].set_ylabel("Signal Strength (dBm)")
     axs[0, 0].grid()
 
-    # --- (1,2): Retry Distribution
+    # (1,2): Retry Flag Histogram
     axs[0, 1].hist(retry_flags, bins=[-0.5, 0.5, 1.5], rwidth=0.6)
     axs[0, 1].set_xticks([0, 1])
     axs[0, 1].set_xticklabels(["No Retry", "Retry"])
@@ -576,29 +715,21 @@ def plot_all_in_one(packets, pcap_file_name):
     axs[0, 1].set_ylabel("Count")
     axs[0, 1].grid()
 
-    # --- (2,1): MCS Index Over Time
-    axs[1, 0].plot(mcs_timestamps, mcs_vals, marker='.', color='purple')
+    # (2,1): MCS Index Over Time
+    axs[1, 0].scatter(mcs_timestamps, mcs_vals, marker='.', color='purple')
     axs[1, 0].set_title("MCS Index Over Time")
     axs[1, 0].set_xlabel("Packet #")
     axs[1, 0].set_ylabel("MCS Index")
     axs[1, 0].grid()
 
-    # --- (2,2): Data Rate vs Signal Strength
+    # (2,2): Avg Data Rate per Signal Bin
     if dr_vs_rssi:
-        # Convert to DataFrame for grouping
         df = pd.DataFrame(dr_vs_rssi, columns=["data_rate", "signal_strength"])
-
-        # Bin the signal strength (e.g., every 5 dBm)
         bin_width = 5
-        df['rssi_bin'] = (df['signal_strength'] // bin_width) * bin_width  # floor binning
-
-        # Compute average data rate per signal bin
+        df['rssi_bin'] = (df['signal_strength'] // bin_width) * bin_width
         grouped = df.groupby('rssi_bin')['data_rate'].mean().reset_index()
-
-        # Sort bins (optional, for correct bar order)
         grouped = grouped.sort_values('rssi_bin')
 
-        # Plot bar chart
         axs[1, 1].bar(grouped['rssi_bin'].astype(str), grouped['data_rate'], width=0.8)
         axs[1, 1].set_title("Avg Data Rate per Signal Strength Bin")
         axs[1, 1].set_xlabel("Signal Strength (dBm bins)")
@@ -606,15 +737,89 @@ def plot_all_in_one(packets, pcap_file_name):
         axs[1, 1].tick_params(axis='x', rotation=45)
         axs[1, 1].grid(axis='y')
 
-    # Final layout
-    plt.tight_layout(rect=[0, 0.03, 1, 0.95])  # leave room for suptitle
+   # (3,1): Histogram of Rate Gap values grouped by Signal Strength Bins
+    if rg_signal_pairs:
+        df = pd.DataFrame(rg_signal_pairs, columns=["signal_strength", "rate_gap"])
+
+        # Bin RSSI
+        bin_width = 5
+        df['rssi_bin'] = (df['signal_strength'] // bin_width) * bin_width
+
+        # Group by RSSI bin
+        grouped = df.groupby('rssi_bin')
+
+        # Prepare data for multiple hist lines
+        rssi_bins = sorted(grouped.groups.keys())
+        data_to_plot = [group['rate_gap'].values for _, group in grouped]
+
+        axs[2, 0].hist(data_to_plot, bins=range(-5, 15), stacked=True, label=[str(b) + " dBm" for b in rssi_bins])
+        axs[2, 0].set_title("Rate Gap Distribution per Signal Strength Bin")
+        axs[2, 0].set_xlabel("Rate Gap")
+        axs[2, 0].set_ylabel("Packet Count")
+        axs[2, 0].legend(title="RSSI Bins")
+        axs[2, 0].grid(axis='y')
+
+
+
+    # (3,2): Rate Gap over Packet Index
+    if rg_indices and rate_gaps:
+        axs[2, 1].plot(rg_indices, rate_gaps, marker='o', linestyle='-', color='red')
+        axs[2, 1].set_title("Rate Gap over Time")
+        axs[2, 1].set_xlabel("Packet #")
+        axs[2, 1].set_ylabel("Rate Gap")
+        axs[2, 1].grid()
+
+    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
     plt.show()
 
+def calculate_averages(data_all: list) -> dict:
+    """
+    Computes averages of key numerical fields from the parsed Wi-Fi packet data.
+
+    Args:
+        data_all (list): List of dictionaries, each representing a packet.
+
+    Returns:
+        dict: Dictionary containing averages for signal strength, SNR, MCS index, data rate, and rate gap.
+    """
+    stats = {
+        'signal_strength': [],
+        'snr': [],
+        'mcs_index': [],
+        'data_rate': [],
+        'rate_gap': []
+    }
+
+    for packet in data_all:
+        try:
+            if packet.get('signal_strength') is not None:
+                stats['signal_strength'].append(float(packet['signal_strength']))
+            if packet.get('snr') is not None:
+                stats['snr'].append(float(packet['snr']))
+            if packet.get('mcs_index') is not None:
+                stats['mcs_index'].append(int(packet['mcs_index']))
+            if packet.get('data_rate') is not None:
+                stats['data_rate'].append(float(packet['data_rate']))
+            if packet.get('rate_gap') is not None:
+                stats['rate_gap'].append(int(packet['rate_gap']))
+        except (ValueError, TypeError):
+            continue
+
+    avg_results = {
+        key: round(np.mean(values), 2) if values else None
+        for key, values in stats.items()
+    }
+
+    print("=== Averages Computed ===")
+    for metric, avg in avg_results.items():
+        print(f"{metric}: {avg if avg is not None else 'N/A'}")
+
+    return avg_results
 
 
 if __name__ == "__main__":
 
-    pcap_file = 'analyzer/pcap_files/gotterdammerung/GOTTERDAMMERUNG_1.pcap' 
+    pcap_file = 'analyzer/pcap_files/1_2_testing_pcap_files/1_2_test_pcap1.pcap' 
 
     # Extract filename without extension for analysis output
     pcap_base = os.path.splitext(os.path.basename(pcap_file))[0]
@@ -637,34 +842,31 @@ if __name__ == "__main__":
     print("Rate gap calculation complete.")    
     print("Calculating missing MCS indexs:")
 
-    data = filter_phy_info_packets(data)
+    #data = filter_phy_info_packets(data)
 
     for packet in data:
         recover_missing_phy_info(packet, mcs_table)
 
+    data = find_spatial_streams(data)
     data = add_rate_gap(data)
+
+    communication_packets = data
 
     # print("\n\t ** Calculation of MCS Index and Spatial group complete. **\n")
     print("Data is ready to be analyzed!.")
 
     # phy_packets = filter_phy_info_packets(data)
 
+    #Faye test.
+    communication_packets = no_filter_for_1_2(data, "d0:b6:6f:96:2b:bb", "dc:e9:94:2a:68:31")
+
+    #communication_packets = no_filter_for_1_2(data, "d0:b6:6f:96:2b:bb", "02:33:f6:61:e2:57")
+
     with open(analysis_file_path, "w") as f:
-        annotate_performance(data, f)
+        annotate_performance(communication_packets, f)
 
     print(f"Analysis written to: {analysis_file_path}")
+
+    print((calculate_averages(communication_packets)))
     
-    plot_all_in_one(data, pcap_file)
-
-    # data = find_spatial_streams(data)
-    # filter beacon frames
-    # beacon_frame_data = filter_beacon_frames(data)
-
-    communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
-
-    # # print_packet_data(communication_packets)
-
-    # print("\nBeacon Frames:")
-    # for i, packet_info in enumerate(communication_packets):
-    #     #if((packet_info['mcs_index'] != '130') and (packet_info['short_gi'] == False)):
-    #     print(f"Packet #{i+1}: {packet_info}")
+    plot_all_in_one(communication_packets, pcap_file)
