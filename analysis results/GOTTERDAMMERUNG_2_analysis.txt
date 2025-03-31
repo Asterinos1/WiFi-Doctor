@@ -1,80 +1,80 @@
 
 --- Packet #1 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #2 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #3 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #4 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #5 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #6 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #7 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #8 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #9 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #10 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #11 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #12 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #13 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #14 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #15 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #16 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #17 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #18 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #19 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #20 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
 [2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
@@ -541,247 +541,247 @@
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #136 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #137 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #138 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #139 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #140 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #141 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #142 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #143 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #144 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #145 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #146 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #147 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #148 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #149 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #150 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #151 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #152 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #153 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #154 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #155 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #156 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #157 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #158 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #159 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #160 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #161 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #162 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #163 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #164 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #165 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #166 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #167 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #168 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #169 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #170 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #171 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #172 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #173 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #174 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #175 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #176 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #177 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #178 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #179 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #180 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #181 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #182 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #183 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #184 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: No rate gap info
-[3] Interference: Little to none interference signs
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #185 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #186 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #187 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #188 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #189 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #190 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #191 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #192 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #193 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #194 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #195 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #196 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #197 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
@@ -801,35 +801,35 @@
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #201 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #202 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #203 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #204 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #205 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #206 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #207 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #208 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #209 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
@@ -837,873 +837,1545 @@
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #210 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #211 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #212 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #213 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #214 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #215 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #216 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #217 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #218 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #219 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #220 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #221 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #222 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #223 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #224 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #225 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #226 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #227 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #228 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #229 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #230 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #231 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #232 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #233 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #234 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #235 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #236 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #237 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #238 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #239 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #240 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #241 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #242 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #243 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #244 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #245 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #246 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #247 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #248 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #249 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #250 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #251 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #252 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #253 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #254 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #255 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #256 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #257 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #258 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #259 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #260 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #261 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #262 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #263 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #264 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #265 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #266 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #267 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #268 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #269 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #270 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #271 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #272 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #273 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #274 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #275 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #276 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #277 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #278 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #279 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #280 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #281 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #282 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #283 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #284 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #285 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #286 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #287 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #288 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #289 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #290 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #291 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #292 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #293 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #294 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #295 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #296 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #297 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #298 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #299 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #300 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #301 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #302 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #303 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #304 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #305 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #306 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #307 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #308 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #309 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #310 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #311 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #312 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #313 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #314 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #315 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #316 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #317 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #318 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #319 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #320 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #321 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #322 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #323 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #324 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #325 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #326 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #327 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #328 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #329 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #330 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #331 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #332 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #333 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #334 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #335 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #336 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #337 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #338 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #339 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #340 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #341 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #342 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #343 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #344 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #345 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #346 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #347 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #348 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #349 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #350 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #351 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #352 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #353 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #354 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #355 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #356 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #357 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #358 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #359 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #360 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #361 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #362 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #363 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #364 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #365 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #366 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #367 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #368 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #369 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #370 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #371 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #372 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #373 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #374 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #375 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #376 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #377 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #378 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #379 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #380 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #381 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #382 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #383 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #384 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #385 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #386 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #387 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #388 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #389 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #390 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #391 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #392 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #393 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #394 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #395 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #396 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #397 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #398 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #399 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #400 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #401 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #402 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #403 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #404 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #405 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #406 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #407 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #408 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #409 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #410 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #411 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #412 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #413 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #414 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #415 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #416 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #417 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #418 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #419 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #420 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #421 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #422 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #423 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #424 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #425 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #426 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
-[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
 --- Packet #427 ---
 [1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #428 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #429 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #430 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #431 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #432 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #433 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #434 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
 [2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
 [3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #435 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #436 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #437 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #438 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #439 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #440 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #441 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #442 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #443 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #444 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #445 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #446 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #447 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #448 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #449 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #450 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #451 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #452 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #453 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #454 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #455 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #456 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #457 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #458 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #459 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #460 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #461 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #462 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #463 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #464 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #465 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #466 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #467 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #468 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #469 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #470 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #471 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #472 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #473 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #474 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #475 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 6)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #476 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #477 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #478 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #479 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Performance getting poorer - surpassed threshold (rate gap: 7)
+[3] Interference: Strong signal (RSSI > -70 dBm) but poor rate , interference likely
+--- Packet #480 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #481 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #482 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #483 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #484 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #485 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #486 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #487 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #488 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #489 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #490 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #491 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #492 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #493 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #494 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #495 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #496 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #497 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #498 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #499 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #500 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #501 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #502 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #503 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #504 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #505 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #506 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #507 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #508 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #509 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #510 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #511 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #512 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #513 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #514 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #515 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #516 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #517 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #518 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #519 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #520 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #521 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #522 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #523 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #524 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #525 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #526 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #527 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #528 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #529 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #530 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #531 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #532 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #533 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #534 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #535 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #536 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #537 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #538 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #539 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #540 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #541 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #542 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #543 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #544 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #545 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #546 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #547 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #548 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #549 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #550 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #551 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #552 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #553 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #554 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #555 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #556 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #557 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #558 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #559 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #560 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #561 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #562 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #563 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #564 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #565 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #566 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #567 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #568 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #569 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #570 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #571 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #572 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #573 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #574 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #575 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #576 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #577 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #578 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #579 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #580 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #581 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #582 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #583 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #584 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #585 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Slight performance drop - still below threshold (rate gap: 1)
+[3] Interference: Little to none interference signs
+--- Packet #586 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #587 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #588 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #589 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #590 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #591 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #592 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #593 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #594 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs
+--- Packet #595 ---
+[1] Config: PHY Type 8 -> DMG (802.11ad), Bandwidth: 20 MHz (narrow channel, lower capacity, more robust to interference), Short GI: Disabled (lower error rate, but slightly reduced throughput)
+[2] Rate Gap: Expected performance (rate gap: 0)
+[3] Interference: Little to none interference signs

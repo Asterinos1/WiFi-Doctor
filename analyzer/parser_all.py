@@ -3,6 +3,8 @@ from tqdm import tqdm
 import pdf_data
 import matplotlib.pyplot as plt
 import os
+import numpy as np
+import pandas as pd
 
 def extract_all_data(pcap_file: str, packet_limit: int = 0) -> list:
     """
@@ -311,7 +313,7 @@ def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> li
         and packet.get("frame_type_subtype") == filter
     ]
     
-    print(f"Number of packets passing the filter: {len(filtered_packets)}")
+    print(f"Number of packets passing the filter (HowIWiFi_PCAP.pcap required): {len(filtered_packets)}")
     
     return filtered_packets
 
@@ -537,13 +539,24 @@ def plot_all_in_one(packets, pcap_file_name):
     # Process data
     timestamps = list(range(len(packets)))
     signal_values = [int(p['signal_strength']) for p in packets if p.get('signal_strength')]
-    retry_flags = [int(p['retry_flag']) for p in packets if p.get('retry_flag') in ['0', '1']]
     mcs_vals = [int(p['mcs_index']) for p in packets if p.get('mcs_index')]
     mcs_timestamps = [i for i, p in enumerate(packets) if p.get('mcs_index')]
     dr_vs_rssi = [(float(p['data_rate']), int(p['signal_strength']))
                   for p in packets if p.get('data_rate') and p.get('signal_strength')]
+    
+    retry_flags = []
 
-    # Create 2x2 subplots (just like MATLAB's subplot(2,2,1)...)
+    for p in packets:
+        retry_raw = p.get('retry_flag')
+        if retry_raw is not None:
+            val = str(retry_raw).strip().lower()
+            if val in ['1', 'true']:
+                retry_flags.append(1)
+            elif val in ['0', 'false']:
+                retry_flags.append(0)
+
+
+    # Create 2x2 subplots
     fig, axs = plt.subplots(2, 2, figsize=(12, 9))
     fig.suptitle(f"{pcap_file_name} Analysis", fontsize=16)
 
@@ -572,12 +585,26 @@ def plot_all_in_one(packets, pcap_file_name):
 
     # --- (2,2): Data Rate vs Signal Strength
     if dr_vs_rssi:
-        data_rates, signals = zip(*dr_vs_rssi)
-        axs[1, 1].scatter(signals, data_rates, alpha=0.6)
-        axs[1, 1].set_title("Data Rate vs Signal Strength")
-        axs[1, 1].set_xlabel("Signal Strength (dBm)")
-        axs[1, 1].set_ylabel("Data Rate (Mbps)")
-        axs[1, 1].grid()
+        # Convert to DataFrame for grouping
+        df = pd.DataFrame(dr_vs_rssi, columns=["data_rate", "signal_strength"])
+
+        # Bin the signal strength (e.g., every 5 dBm)
+        bin_width = 5
+        df['rssi_bin'] = (df['signal_strength'] // bin_width) * bin_width  # floor binning
+
+        # Compute average data rate per signal bin
+        grouped = df.groupby('rssi_bin')['data_rate'].mean().reset_index()
+
+        # Sort bins (optional, for correct bar order)
+        grouped = grouped.sort_values('rssi_bin')
+
+        # Plot bar chart
+        axs[1, 1].bar(grouped['rssi_bin'].astype(str), grouped['data_rate'], width=0.8)
+        axs[1, 1].set_title("Avg Data Rate per Signal Strength Bin")
+        axs[1, 1].set_xlabel("Signal Strength (dBm bins)")
+        axs[1, 1].set_ylabel("Average Data Rate (Mbps)")
+        axs[1, 1].tick_params(axis='x', rotation=45)
+        axs[1, 1].grid(axis='y')
 
     # Final layout
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])  # leave room for suptitle
@@ -587,7 +614,7 @@ def plot_all_in_one(packets, pcap_file_name):
 
 if __name__ == "__main__":
 
-    pcap_file = 'analyzer/pcap_files/1_2_testing_pcap_files/1_2_test_pcap2.pcap' 
+    pcap_file = 'analyzer/pcap_files/gotterdammerung/GOTTERDAMMERUNG_1.pcap' 
 
     # Extract filename without extension for analysis output
     pcap_base = os.path.splitext(os.path.basename(pcap_file))[0]
