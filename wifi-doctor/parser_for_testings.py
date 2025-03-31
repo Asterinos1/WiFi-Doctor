@@ -1,8 +1,7 @@
 import pyshark
+from tqdm import tqdm
 
-
-#not working
-def extract_all_data_testing_pcap(pcap_file: str) -> list:
+def extract_all_data_testing_pcap(pcap_file: str, packet_limit=0) -> list:
     """
     Using pyshark this method applies no filter into the pcap file
     and tries to extract various information from those packets such as:
@@ -33,7 +32,9 @@ def extract_all_data_testing_pcap(pcap_file: str) -> list:
     extracted_data_all = []
 
     i = 0
-    for packet in capture:
+    for packet in tqdm(capture, desc="Extracting Data", unit="packet"):
+        if packet_limit != 0 and i >= packet_limit:
+            break 
         packet_data_all = {
             'bssid': None,
             'transmitter_mac': None,
@@ -90,9 +91,14 @@ def extract_all_data_testing_pcap(pcap_file: str) -> list:
             else:
                 packet_data_all['ssid'] = None  
         extracted_data_all.append(packet_data_all)
+        
+        if packet_data_all['mcs_index'] is None:
+            packet_data_all['mcs_index'] = 7
+
 
     capture.close()
     return extracted_data_all
+
 
 def find_spatial_streams(data_all: list) -> list:
     """
@@ -116,7 +122,10 @@ def find_spatial_streams(data_all: list) -> list:
                 elif 16 <= mcs_index <= 23:
                     packet['spatial_streams'] = 3
             except ValueError:
-                pass  
+                pass 
+        else:
+            packet['spatial_streams'] = 1
+
 
     return data_all
 
@@ -229,7 +238,7 @@ def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> li
     """
     filtered_packets = [
         packet for packet in data_all
-        if packet.get("transmitter_mac") == source_mac and packet.get("receiver_mac") == dest_mac and packet.get("frame_type_subtype") == filter
+        if packet.get("transmitter_mac") == source_mac and packet.get("receiver_mac") == dest_mac and packet.get("phy_type") == filter
     ]
     return filtered_packets
 
@@ -255,9 +264,10 @@ if __name__ == "__main__":
     print("eimai kainourgio")
     pcap_file = 'pcap_files/1_2_test_pcap1.pcap'  
     data = extract_all_data_testing_pcap(pcap_file)
+    data = find_spatial_streams(data)
     data = add_rate_gap(data)
     
-    #data = find_spatial_streams(data)
+   
 
     #filter beacon frames
     #beacon_frame_data = filter_beacon_frames(data)
