@@ -42,19 +42,54 @@ def get_pcap_file():
 def run_analysis(pcap_file, parser_name):
     print(f"\n[INFO] Running Wi-Fi Doctor using parser: {parser_name}")
     
+    file_name = os.path.basename(pcap_file)
     # Load and parse packets
     if parser_name == "parser_all":
         data = extract_all_data(pcap_file)
         data = add_rate_gap(data)
-        communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
+        
+        if file_name == "HowIWiFi_PCAP.pcap":
+            print("HowIWiFi_PCAP.pcap (downlink) detected.")
+            communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
+        elif file_name == "faye2p4.pcap":
+            print("faye2p4.pcap (downlink)  detected.")
+            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:b0", "02:33:f6:61:e2:57")
+        elif file_name in ["1_2_test_pcap1.pcap", "1_2_test_pcap2.pcap"]:
+            print("1_2_test_pcapX.pcap (downlink)  detected.")
+            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:bb", "dc:e9:94:2a:68:31")
+        else:
+            communication_packets = data
+
     elif parser_name == "parser_for_testing":
         data = extract_testing(pcap_file)
         data = add_rate_gap(data)
-        communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:bb", "dc:e9:94:2a:68:31")
+
+        if file_name == "HowIWiFi_PCAP.pcap":
+            print("HowIWiFi_PCAP.pcap (downlink) detected.")
+            communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
+        elif file_name == "faye2p4.pcap":
+            print("faye2p4.pcap (downlink)  detected.")
+            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:b0", "02:33:f6:61:e2:57")
+        elif file_name in ["1_2_test_pcap1.pcap", "1_2_test_pcap2.pcap"]:
+            print("1_2_test_pcapX.pcap (downlink)  detected.")
+            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:bb", "dc:e9:94:2a:68:31")
+        else:
+            communication_packets = data
     elif parser_name == "parser_home":
         data = extract_home(pcap_file)
         data = add_rate_gap(data)
-        communication_packets = no_filter_home(data, "d0:b6:6f:96:2b:b0", "02:33:f6:61:e2:57")
+
+        if file_name == "HowIWiFi_PCAP.pcap":
+            print("HowIWiFi_PCAP.pcap (downlink) detected.")
+            communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
+        elif file_name == "faye2p4.pcap":
+            print("faye2p4.pcap (downlink)  detected.")
+            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:b0", "02:33:f6:61:e2:57")
+        elif file_name in ["1_2_test_pcap1.pcap", "1_2_test_pcap2.pcap"]:
+            print("1_2_test_pcapX.pcap (downlink)  detected.")
+            communication_packets = no_filter_test(data, "d0:b6:6f:96:2b:bb", "dc:e9:94:2a:68:31")
+        else:
+            communication_packets = data
     else:
         print("[ERROR] Invalid parser name.")
         return
