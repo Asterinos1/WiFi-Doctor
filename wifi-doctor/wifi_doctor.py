@@ -110,16 +110,17 @@ def run_analysis(pcap_file, parser_name):
         decay_rate = 0.1
         window_size = 10
 
-        compute_density_metrics(data, rssi_history, last_activity, decay_rate, window_size, rssid_log)
-        save_rssid_log(rssid_log)
-        avg_rssi = compute_downlink_signal_strength(communication_packets, rssi_log)
-        save_rssi_log(rssi_log)
+        if(file_name != "HowIWiFi_PCAP.pcap"):
+            compute_density_metrics(data, rssi_history, last_activity, decay_rate, window_size, rssid_log)
+            save_rssid_log(rssid_log)
+            avg_rssi = compute_downlink_signal_strength(communication_packets, rssi_log)
+            save_rssi_log(rssi_log)
 
-        if avg_rssi is None:
-            print(f"\nError in calculating avg_rssi, it's None")
-        else:
-            print(f"\n[INFO] Average Signal Strength: {avg_rssi:.2f} dBm")
-            print("[INFO] Signal Quality Analysis:", analyze_signal_quality(avg_rssi))
+            if avg_rssi is None:
+                print(f"\nError in calculating avg_rssi, it's None")
+            else:
+                print(f"\n[INFO] Average Signal Strength: {avg_rssi:.2f} dBm")
+                print("[INFO] Signal Quality Analysis:", analyze_signal_quality(avg_rssi))
 
         throughput = calculate_throughput(communication_packets)
         print_throughput(throughput)
