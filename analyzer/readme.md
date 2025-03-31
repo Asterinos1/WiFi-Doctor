@@ -8,9 +8,9 @@ parser_all.py ->    1) annotate_performance() which performs the analysis
                     
                     2) plot_all_in_one(), this methods plots various stats:
                         (1,1): Signal Strength Over Time
-                        (1,2): Retry Distribution <-- this one maybe has to go
+                        (1,2): Retry Distribution (fixed)
                         (2,1): MCS Index Over Time
-                        (2,2): Data Rate vs Signal Strength
+                        (2,2): Data Rate vs Signal Strength (fixed)
 
                     3) kept the add_rate_gap()
 
