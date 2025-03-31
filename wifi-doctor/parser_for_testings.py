@@ -45,7 +45,6 @@ def extract_all_data_testing_pcap(pcap_file: str, packet_limit=0) -> list:
             'bandwidth': None,
             'spatial_streams': None,
             'short_gi': None,
-            'tsf_timestamp': None,
             'data_rate': None,
             'rate_gap' : None,
             'channel': None,
@@ -54,7 +53,8 @@ def extract_all_data_testing_pcap(pcap_file: str, packet_limit=0) -> list:
             'retry_flag': None,
             'snr': None,
             'ssid': None,
-            'timestamp': None
+            'timestamp': None,
+            'tsf_timestamp': None
         }
 
         if hasattr(packet, 'wlan'):
@@ -72,12 +72,11 @@ def extract_all_data_testing_pcap(pcap_file: str, packet_limit=0) -> list:
             packet_data_all['bandwidth'] = "20 MHz" if bandwidth == "0" else bandwidth
             packet_data_all['spatial_streams'] = getattr(packet.wlan_radio, '11ac.num_sts', None)
             packet_data_all['short_gi'] = getattr(packet.wlan_radio, '11ac.short_gi', None)
-            packet_data_all['tsf_timestamp'] = getattr(packet.wlan_radio, 'timestamp', None)
             packet_data_all['data_rate'] = getattr(packet.wlan_radio, 'data_rate', None)
             packet_data_all['channel'] = getattr(packet.wlan_radio, 'channel', None)
             packet_data_all['signal_strength'] = getattr(packet.wlan_radio, 'signal_dbm', None)
             packet_data_all['snr'] = getattr(packet.wlan_radio, 'snr', None)
-            packet_data_all['timestamp'] = getattr(packet.wlan_radio, 'timestamp', None) 
+            packet_data_all['tsf_timestamp'] = getattr(packet.wlan_radio, 'timestamp', None) 
 
         if hasattr(packet, 'radiotap'):
             packet_data_all['frequency'] = getattr(packet.radiotap, 'channel_freq', None)
@@ -93,30 +92,21 @@ def extract_all_data_testing_pcap(pcap_file: str, packet_limit=0) -> list:
             else:
                 packet_data_all['ssid'] = None  
         extracted_data_all.append(packet_data_all)
-
-    
+        
+        if packet_data_all['mcs_index'] is None:
+            packet_data_all['mcs_index'] = 7
 
 
     capture.close()
     return extracted_data_all
 
 def replace_phy_type_5_with_7(data_all: list) -> list:
-    """
-    Αντικαθιστά την τιμή του 'phy_type' με 7 αν είναι 5.
-
-    Args:
-        data_all (list): Λίστα από dictionaries που περιέχουν τα δεδομένα των πακέτων.
-
-    Returns:
-        List: Νέα λίστα όπου τα 'phy_type' με τιμή 5 έχουν αντικατασταθεί με 7.
-    """
     for packet in data_all:
         if packet.get('phy_type') == '5':  
             packet['mcs_index'] = 7
         else: 
             packet['mcs_index'] = 1
     return data_all
-
 
 def find_spatial_streams(data_all: list) -> list:
     """
@@ -282,7 +272,6 @@ if __name__ == "__main__":
     print("eimai kainourgio")
     pcap_file = 'pcap_files/1_2_test_pcap1.pcap'  
     data = extract_all_data_testing_pcap(pcap_file)
-    data = replace_phy_type_5_with_7(data)
     data = find_spatial_streams(data)
     data = add_rate_gap(data)
     

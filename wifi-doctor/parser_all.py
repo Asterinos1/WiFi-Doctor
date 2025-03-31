@@ -1,4 +1,5 @@
 import pyshark
+from tqdm import tqdm
 
 def extract_all_data(pcap_file: str) -> list:
     """
@@ -31,7 +32,7 @@ def extract_all_data(pcap_file: str) -> list:
     extracted_data_all = []
 
     i = 0
-    for packet in capture:
+    for packet in tqdm(capture, desc="Extracting Data", unit="packet"):
         # if i == 0:
         #     _ = packet['wlan.mgt']
         #     print(packet['wlan.mgt'])
@@ -55,7 +56,8 @@ def extract_all_data(pcap_file: str) -> list:
             'retry_flag': None,
             'snr': None,
             'ssid': None,
-            'timestamp': None
+            'timestamp': None,
+            'tsf_timestamp': None
         }
 
         if hasattr(packet, 'wlan'):
@@ -77,6 +79,7 @@ def extract_all_data(pcap_file: str) -> list:
             packet_data_all['channel'] = getattr(packet.wlan_radio, 'channel', None)
             packet_data_all['signal_strength'] = getattr(packet.wlan_radio, 'signal_dbm', None)
             packet_data_all['snr'] = getattr(packet.wlan_radio, 'snr', None)
+            packet_data_all['tsf_timestamp'] = getattr(packet.wlan_radio, 'timestamp', None)
 
         if hasattr(packet, 'radiotap'):
             packet_data_all['frequency'] = getattr(packet.radiotap, 'channel_freq', None)
@@ -85,12 +88,7 @@ def extract_all_data(pcap_file: str) -> list:
         if 'wlan.mgt' in packet:
             ssid_tag = packet['wlan.mgt'].get('wlan.tag', None)
             timestamps =packet['wlan.mgt'].get('wlan_fixed_timestamp', None)
-            #print(f"this is the {timestamps}\n\n")
             packet_data_all['timestamp'] = timestamps
-            #print(f"\nFinal Extracted Data: {extracted_data_all}")
-            #############################DES TO META ###########################################
-            #packet_data_all['timestamp']  = packet['wlan.mgt'].get('wlan_fixed_timestamp', None)
-            #############################DES TO META ###########################################
             if ssid_tag and 'SSID parameter set:' in ssid_tag:
                 packet_data_all['ssid'] = ssid_tag.split('SSID parameter set: ')[-1].strip('"')
             else:
@@ -226,8 +224,6 @@ def add_rate_gap(data_all: list) -> list:
                 signal_strength = int(packet['signal_strength'])
                 spatial_streams = int(packet['spatial_streams'])
                 expected_mcs_index = find_expected_mcs_index(signal_strength, spatial_streams)
-
-                # Compute the rate gap
                 actual_mcs_index = int(packet['mcs_index']) if packet.get('mcs_index') is not None else 0
                 packet['rate_gap'] = find_rate_gap(expected_mcs_index, actual_mcs_index)
 
@@ -236,9 +232,6 @@ def add_rate_gap(data_all: list) -> list:
 
     return data_all
 
-
-## ORIZOUME EMEIS ENA BASELINE -> kinito dipla sto router einai to ideal
-## MCS INDEX
 def find_rate_gap(expected_mcs_index, actual_mcs_index):
 
     return expected_mcs_index-actual_mcs_index
@@ -263,13 +256,12 @@ def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> li
 
 
 if __name__ == "__main__":
-    print("eimai kainourgio")
+
     pcap_file = 'pcap_files/HowIWiFi_PCAP.pcap'  
     data = extract_all_data(pcap_file)
     data = add_rate_gap(data)
     
     #data = find_spatial_streams(data)
-
     #filter beacon frames
     #beacon_frame_data = filter_beacon_frames(data)
 
