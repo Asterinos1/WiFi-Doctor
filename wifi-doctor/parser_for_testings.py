@@ -100,6 +100,13 @@ def extract_all_data_testing_pcap(pcap_file: str, packet_limit=0) -> list:
     capture.close()
     return extracted_data_all
 
+def replace_phy_type_5_with_7(data_all: list) -> list:
+    for packet in data_all:
+        if packet.get('phy_type') == '5':  
+            packet['mcs_index'] = 7
+        else: 
+            packet['mcs_index'] = 1
+    return data_all
 
 def find_spatial_streams(data_all: list) -> list:
     """

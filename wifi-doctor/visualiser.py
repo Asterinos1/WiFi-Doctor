@@ -42,7 +42,7 @@ def plot_rssid_over_time():
         return
 
     plt.style.use("ggplot")  # Clean white background
-    plt.figure(figsize=(10, 5))
+    plt.figure(1,figsize=(10, 5))
 
     unique_channels = set(channels)  # Get unique channels
 
@@ -77,7 +77,7 @@ def plot_signal_strength_over_time():
     if not timestamps:
         return
     
-    plt.figure(figsize=(10, 5))
+    plt.figure(2,figsize=(10, 5))
     plt.plot(timestamps, rssi_values, marker='o', linestyle='-', color='b', alpha=0.7)
     plt.xlabel("Time (seconds)")
     plt.ylabel("RSSI (dBm)")
