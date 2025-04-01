@@ -259,15 +259,22 @@ def calculate_throughput(data_frames):
     if not data_frames:
         print("No data frames available for throughput calculation.")
         return 0
-    
+
     frame_loss_rate = calculate_frame_loss(data_frames)
     
-    # Compute average data rate
-    data_rates = [float(packet.get("data_rate", 0)) for packet in data_frames if "data_rate" in packet]
-    avg_data_rate = sum(data_rates) / len(data_rates) if data_rates else 0
+    # Filter packets with valid data_rate
+    valid_data_rates = [float(packet["data_rate"]) for packet in data_frames 
+                        if packet.get("data_rate") is not None]
 
+    if not valid_data_rates:
+        print("No valid data_rate values available for throughput calculation.")
+        return 0
+
+    avg_data_rate = sum(valid_data_rates) / len(valid_data_rates)
     throughput = avg_data_rate * (1 - frame_loss_rate)
+    
     return throughput
+
 
 
 """
