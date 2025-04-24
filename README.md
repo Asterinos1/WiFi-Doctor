@@ -17,7 +17,7 @@ Make sure you have **Python** installed and install the following libraries:
 pip install matplotlib pandas numpy pyshark
 ```
 
-## How to Use the Tool
+## How to use the tool
 
 - Place your .pcap file in the /pcap_files directory.
 
