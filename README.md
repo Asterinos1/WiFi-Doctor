@@ -1,4 +1,4 @@
-# 🩺 WiFi-Doctor - Spring 2025
+#  WiFi-Doctor - Spring 2025
 
 **Spring 2025 – Computer Networks II Project**  
 **Technical University of Crete**  
@@ -9,7 +9,7 @@
 - Emmanouil Niaropetros  
 
 
-## 📦 Requirements
+##  Requirements
 
 Make sure you have **Python** installed and install the following libraries:
 
