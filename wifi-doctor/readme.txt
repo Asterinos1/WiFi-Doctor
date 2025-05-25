@@ -12,9 +12,13 @@ How to use the tool:
 1) Place any .pcap file you wish to analyse in the directory /pcap_files.
 
 2) When you run the program, you will be asked to select a parser.
-     (parser_home is NOT recommended, it was used for testing, contains bugs)
+       - parser_all - 802.11n
+       - parser_for_testing - 802.11ac
+       - parser_home - (DEPRECATED)
 
-3) After the program will ask you to select a .pcap file.
+(parser_home is NOT recommended, it was used for testing, contains bugs)
+
+3) After thath, the program will ask you to select a .pcap file.
 
 4) Wait for the wifi_doctor to extract the info from the .pcap file.
 
