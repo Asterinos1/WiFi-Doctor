@@ -255,21 +255,20 @@ def filter_for_1_2(data_all: list, source_mac: str, dest_mac: str, filter) -> li
     return filtered_packets
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    pcap_file = 'pcap_files/HowIWiFi_PCAP.pcap'  
-    data = extract_all_data(pcap_file)
-    data = add_rate_gap(data)
+#     pcap_file = 'pcap_files/HowIWiFi_PCAP.pcap'  
+#     data = extract_all_data(pcap_file)
+#     data = add_rate_gap(data)
     
-    #data = find_spatial_streams(data)
-    #filter beacon frames
-    #beacon_frame_data = filter_beacon_frames(data)
+#     #data = find_spatial_streams(data)
+#     #filter beacon frames
+#     #beacon_frame_data = filter_beacon_frames(data)
 
-    communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
+#     communication_packets = filter_for_1_2(data, "2c:f8:9b:dd:06:a0", "00:20:a6:fc:b0:36", "0x0028")
     
 
-    print("\nBeacon Frames:")
-    for i, packet_info in enumerate(communication_packets):
-        #if((packet_info['mcs_index'] != '130') and (packet_info['short_gi'] == False)):
-        print(f"Packet #{i+1}: {packet_info}")
-
+#     print("\nBeacon Frames:")
+#     for i, packet_info in enumerate(communication_packets):
+#         #if((packet_info['mcs_index'] != '130') and (packet_info['short_gi'] == False)):
+#         print(f"Packet #{i+1}: {packet_info}")
