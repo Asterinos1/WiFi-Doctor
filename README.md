@@ -3,9 +3,9 @@
 **Technical University of Crete**  
 **Networks II Project**  
 **Authors:**  
-- Asterinos Karalis    @Asterinos1
-- Ioanna Zografoula Neamonitaki    @fneamonitaki 
-- Emmanouil Niaropetros @eNiaro    @eNiaro
+- @Asterinos1
+- @fneamonitaki 
+- @eNiaro
 
 
 ##  Requirements
