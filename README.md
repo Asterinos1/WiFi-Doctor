@@ -1,12 +1,11 @@
 #  WiFi-Doctor
 
-**Computer Networks II Project**  
 **Technical University of Crete**  
-**Networks II Lab**  
+**Networks II Project**  
 **Authors:**  
-- Asterinos Karalis  
-- Ioanna Zografoula Neamonitaki  
-- Emmanouil Niaropetros  
+- Asterinos Karalis    @Asterinos1
+- Ioanna Zografoula Neamonitaki    @fneamonitaki 
+- Emmanouil Niaropetros @eNiaro    @eNiaro
 
 
 ##  Requirements
