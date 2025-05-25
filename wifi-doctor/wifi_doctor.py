@@ -10,26 +10,27 @@ from performance_monitor import (
     analyze_signal_quality, save_rssi_log, calculate_throughput
 )
 from visualiser import plot_rssid_over_time, plot_signal_strength_over_time, print_throughput
-from analyzer import annotate_performance, plot_all_in_one
+from analyzer import annotate_performance, plot_all_in_one, plot_data_rate_per_packet
 
 def get_parser_choice():
     print("\nSelect Parser:")
-    print("1) parser_all")
-    print("2) parser_for_testing")
-    print("3) parser_home")
+    print("1) parser_all - 802.11n")
+    print("2) parser_for_testing - 802.11ac")
+    print("3) parser_home - (DEPRECATED)")
     print("4) Exit")
     return input("Enter your choice: ").strip()
 
 def get_pcap_file():
     print("\nAvailable PCAP files:")
     current_dir = pathlib.Path(__file__).parent
-    pcap_dir = current_dir / "pcap_files"
+    pcap_dir = current_dir / "pcap_files_5"
 
     if not pcap_dir.exists():
         print(f"[ERROR] Could not find directory: {pcap_dir}")
         return None
 
-    files = [f for f in pcap_dir.iterdir() if f.suffix == ".pcap"]
+    files = [f for f in pcap_dir.iterdir() if f.suffix in [".pcap", ".pcapng"]]
+
     if not files:
         print("No .pcap files found in pcap_files/")
         return None
@@ -51,7 +52,7 @@ def run_analysis(pcap_file, parser_name):
     file_name = os.path.basename(pcap_file)
     # Load and parse packets
     if parser_name == "parser_all":
-        data = extract_testing(pcap_file)
+        data = extract_all_data(pcap_file)
         data = add_rate_gap(data)
         if file_name == "HowIWiFi_PCAP.pcap":
             print("HowIWiFi_PCAP.pcap (downlink) detected.")
@@ -81,7 +82,7 @@ def run_analysis(pcap_file, parser_name):
         else:
             communication_packets = data
     elif parser_name == "parser_home":
-        data = extract_testing(pcap_file)
+        data = extract_home(pcap_file)
         data = add_rate_gap(data)
         if file_name == "HowIWiFi_PCAP.pcap":
             print("HowIWiFi_PCAP.pcap (downlink) detected.")
@@ -134,6 +135,7 @@ def run_analysis(pcap_file, parser_name):
         with open(output_path, "w") as f:
             annotate_performance(communication_packets, f)
         plot_all_in_one(communication_packets, base_name)
+        plot_data_rate_per_packet(communication_packets, base_name)
         print(f"[INFO] Detailed annotations saved to {output_path}")
 
     else:
