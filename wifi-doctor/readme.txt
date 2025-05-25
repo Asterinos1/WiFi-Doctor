@@ -1,10 +1,11 @@
 WiFi-Doctor
-Spring 2025 – Computer Networks II Project - Technical University of Crete
+Spring Semester 2025 - Technical University of Crete
 Course: Networks II Lab
-Authors: Asterinos Karalis
-         Ioanna Zografoula Neamonitaki
-         Emmanouil Niaropetros
-         Mixalis Kellis
+Authors:
+        Asterinos Karalis               - 2020030107
+        Ioanna Zografoula Neamonitaki   - 2020030088
+        Emmanouil Niaropetros           - 2019030168
+        Mixalis Kellis                  - 2020030078
 
 How to use the tool:
 
