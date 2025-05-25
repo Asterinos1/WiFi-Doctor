@@ -292,55 +292,55 @@ def calculate_frame_loss(data_frames):
     return frame_loss_rate
 
 
-def main():
-    pcap_file = 'pcap_files/faye2p4.pcap'
-    device_mac = "dc:e9:94:2a:68:31"
-    ap_mac = "d0:b6:6f:96:2b:b6" #d0:b6:6f:96:2b:bb
-    filtered_frames = {"0x0008", "0x0020", "0x0028"} 
-    wlan_ra = "02:33:f6:61:e2:57"
-    wlan_sa = "d0:b6:6f:96:2b:b0" 
+# def main():
+#     pcap_file = 'pcap_files/faye2p4.pcap'
+#     device_mac = "dc:e9:94:2a:68:31"
+#     ap_mac = "d0:b6:6f:96:2b:b6" #d0:b6:6f:96:2b:bb
+#     filtered_frames = {"0x0008", "0x0020", "0x0028"} 
+#     wlan_ra = "02:33:f6:61:e2:57"
+#     wlan_sa = "d0:b6:6f:96:2b:b0" 
 
 
-    # For Wi-Fi Density Metrics
-    window_size = 10  # Number of RSSI readings to store for Weighted Moving Average (WMA)
-    rssi_history = {}  # Dictionary to store recent RSSI values for each (SSID, Channel) pair
-    rssid_log = []  # Stores computed RSSID values over time
-    last_activity = {}  # Stores last seen timestamp for each SSID
-    # Controls exponential decay of SSID weight
-    decay_rate = 0.1  # probably good between 0.1-0.01(especially in big pcaps you can make DR even smaller)
+#     # For Wi-Fi Density Metrics
+#     window_size = 10  # Number of RSSI readings to store for Weighted Moving Average (WMA)
+#     rssi_history = {}  # Dictionary to store recent RSSI values for each (SSID, Channel) pair
+#     rssid_log = []  # Stores computed RSSID values over time
+#     last_activity = {}  # Stores last seen timestamp for each SSID
+#     # Controls exponential decay of SSID weight
+#     decay_rate = 0.1  # probably good between 0.1-0.01(especially in big pcaps you can make DR even smaller)
 
-    #For the signal strength quality metric
-    rssi_log = []  # Stores (timestamp, signal_strength)(only data frames AP->Our Device) over time 
-
-    
-    #Density Metrics
-    #If we want to analyze every single packet
-    packet_data = extract_all_data_testing_pcap(pcap_file)
-
-    #If we want to analyze only beacon and data frames
-    #packet_data = filter_beacon_and_data_frames(extract_all_data_testing_pcap(pcap_file))
-
-    compute_density_metrics(packet_data, rssi_history, last_activity, decay_rate, window_size, rssid_log)
-    save_rssid_log(rssid_log,"rssid_log.csv")
-
-    #Calculate how good our signal strength is
-    our_data = no_filter_for_1_2(packet_data, ap_mac, device_mac)
-    avg_rssi = compute_downlink_signal_strength(our_data, rssi_log)
-    if avg_rssi:
-        print(analyze_signal_quality(avg_rssi))
-    save_rssi_log(rssi_log, "rssi_log.csv")
-    
-
-    '''
-    data_frames = no_filter_for_1_2(extract_all_data_testing_pcap(pcap_file), wlan_sa, wlan_ra)
-    calculate_throughput(data_frames)
-    '''
+#     #For the signal strength quality metric
+#     rssi_log = []  # Stores (timestamp, signal_strength)(only data frames AP->Our Device) over time 
 
     
-    pcap_part2 = "pcap_files/1_2_test_pcap2.pcap"
-    data_frames = filter_by_receiver(extract_all_data_testing_pcap(pcap_part2), "dc:e9:94:2a:68:31", filtered_frames)
-    calculate_throughput(data_frames)
+#     #Density Metrics
+#     #If we want to analyze every single packet
+#     packet_data = extract_all_data_testing_pcap(pcap_file)
+
+#     #If we want to analyze only beacon and data frames
+#     #packet_data = filter_beacon_and_data_frames(extract_all_data_testing_pcap(pcap_file))
+
+#     compute_density_metrics(packet_data, rssi_history, last_activity, decay_rate, window_size, rssid_log)
+#     save_rssid_log(rssid_log,"rssid_log.csv")
+
+#     #Calculate how good our signal strength is
+#     our_data = no_filter_for_1_2(packet_data, ap_mac, device_mac)
+#     avg_rssi = compute_downlink_signal_strength(our_data, rssi_log)
+#     if avg_rssi:
+#         print(analyze_signal_quality(avg_rssi))
+#     save_rssi_log(rssi_log, "rssi_log.csv")
     
 
-if __name__ == '__main__':
-	main()
+#     '''
+#     data_frames = no_filter_for_1_2(extract_all_data_testing_pcap(pcap_file), wlan_sa, wlan_ra)
+#     calculate_throughput(data_frames)
+#     '''
+
+    
+#     pcap_part2 = "pcap_files/1_2_test_pcap2.pcap"
+#     data_frames = filter_by_receiver(extract_all_data_testing_pcap(pcap_part2), "dc:e9:94:2a:68:31", filtered_frames)
+#     calculate_throughput(data_frames)
+    
+
+# if __name__ == '__main__':
+# 	main()
