@@ -3,9 +3,9 @@
 **Technical University of Crete**  
 **Networks II Project**  
 **Authors:**  
-- @Asterinos1
-- @fneamonitaki 
-- @eNiaro
+- [Asterinos1](https://github.com/Asterinos1)
+- [fneamonitaki](https://github.com/fneamonitaki) 
+- [eNiaro](https://github.com/eNiaro)
 
 
 ##  Requirements
